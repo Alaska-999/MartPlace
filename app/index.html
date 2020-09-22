@@ -1,22 +1,569 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mart Place</title>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="css.libs.min.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
-    
 
+<body>
+
+    <header class="header">
+        <div class="top-header">
+            <div class="container">
+                <div class="top-header__inner">
+
+                    <a class="logo" href="#">
+                        <img class="logo__img" src="images/Logo.png" alt="logo">
+                    </a>
+
+                    <div class="top-header__left-pannel">
+
+                        <a href="#" class="top-header__seller-link">Become a Seller</a>
+
+
+                        <div class="top-header__menu">
+                            <a href="#" class="top-header__menu-item">
+                                <span class="lnr lnr-alarm "></span>
+                                <span class="top-header__notif top-header__notif--red">25</span>
+                            </a>
+
+                            <a href="#" class="top-header__menu-item">
+                                <span class="lnr lnr-envelope"></span>
+                                <span class="top-header__notif top-header__notif--green">6</span>
+                            </a>
+
+                            <a href="#" class="top-header__menu-item">
+                                <span class="lnr lnr-cart"></span>
+                                <span class="top-header__notif top-header__notif--blue">2</span>
+                            </a>
+
+                        </div>
+
+                        <a href="#" class="top-header__user-menu">
+                            <div class="top-header__user-img"></div>
+                            <div class="top-header__user-info">
+                                <div class="top-header__user-name">Taofiq Hakim</div>
+                                <div class="top-header__balance">$20.45</div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-menu">
+            <div class="container">
+                <div class="header-menu__inner">
+                    <nav class="header-menu__nav">
+                        <ul class="header-menu__nav-list">
+
+                            <li class="header-menu__nav-item drop-down">
+                                <a href="#" class="header-menu__nav-link drop-down__link">
+                                    Home
+                                </a>
+
+                                <!-- <ul class="drop-down__list">
+                                    <li class="drop-down__item">
+                                        <a class="drop-down__link" href="#">
+                                            Home One Multi User
+                                        </a>
+                                    </li>
+                                    <li class="drop-down__item">
+                                        <a class="drop-down__link" href="#">
+                                            Home Two Single User
+                                        </a>
+                                    </li>
+                                    <li class="drop-down__item">
+                                        <a class="drop-down__link" href="#">
+                                            Home Three Product
+                                        </a>
+                                    </li>
+                                </ul> -->
+                            </li>
+
+                            <li class="header-menu__nav-item">
+                                <a href="#" class="header-menu__nav-link">
+                                    All products
+                                </a>
+                            </li>
+
+                            <li class="header-menu__nav-item drop-down">
+                                <a href="#" class="header-menu__nav-link drop-down__link">
+                                    Wordpress
+                                </a>
+
+                                <!-- <ul class="drop-down__list">
+                                    <li class="drop-down__item">
+                                        <a class="drop-down__link" href="#">
+                                            Popular Items
+                                        </a>
+                                    </li>
+                                    <li class="drop-down__item">
+                                        <a class="drop-down__link" href="#">
+                                            Admin Templates
+                                        </a>
+                                    </li>
+                                    <li class="drop-down__item">
+                                        <a class="drop-down__link" href="#">
+                                            Blog / Magazine / News
+                                        </a>
+                                    </li>
+                                    <li class="drop-down__item">
+                                        <a class="drop-down__link" href="#">
+                                            Creative
+                                        </a>
+                                    </li>
+
+                                    <li class="drop-down__item">
+                                        <a class="drop-down__link" href="#">
+                                            Corporate Business
+                                        </a>
+                                    </li>
+
+                                    <li class="drop-down__item">
+                                        <a class="drop-down__link" href="#">
+                                            Resume Portfolio
+                                        </a>
+                                    </li>
+
+                                    <li class="drop-down__item">
+                                        <a class="drop-down__link" href="#">
+                                            eCommerce
+                                        </a>
+                                    </li>
+                                    <li class="drop-down__item">
+                                        <a class="drop-down__link" href="#">
+                                            Entertainment
+                                        </a>
+                                    </li>
+                                    <li class="drop-down__item">
+                                        <a class="drop-down__link" href="#">
+                                            Landing Pages
+                                        </a>
+                                    </li>
+                                </ul> -->
+
+                            </li>
+
+                            <li class="header-menu__nav-item">
+                                <a href="#" class="header-menu__nav-link">
+                                    Festures
+                                </a>
+                            </li>
+                            <li class="header-menu__nav-item">
+                                <a href="#" class="header-menu__nav-link">
+                                    Pages
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <form class="menu-search" action="#" target="_self">
+                        <label class="menu-search__label" for="menu-search__input"></label>
+                        <input class="menu-search__input" id="menu-search__input" type="search" name="menu-search"
+                            placeholder="Search product here...">
+                        <button class="menu-search__btn" type="submit" name="menu-search-btn">
+                            <span class="lnr lnr-magnifier"></span>
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+
+    <main>
+        <section class="welcome">
+            <div class="container">
+
+                <div class="welcome__title">
+                    Create Your Own <span class="welcome__thumbnail">Digital Product Marketplace</span>
+                </div>
+                <div class="welcome__subtitle">
+                    MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
+                </div>
+
+                <a href="#" class="welcome__btn">
+                    View All Products
+                </a>
+                <a href="#" class="welcome__btn">
+                    Popular Products
+                </a>
+
+
+                <form class="search-product" action="#" target="_self">
+                    <label class="search-product__label" for="search-product__input"></label>
+                    <input class="search-product__input" id="search-product__input" type="search" name="search-product"
+                        placeholder="Search product here...">
+
+                    <select class="search-product__filter" name="search-product__filter">
+                        <option class="search-product__option" value="all-categoties" selected>All Categoties</option>
+                        <option class="search-product__option" value="Wordpress">Wordpress</option>
+                        <option class="search-product__option" value="Landing Page">Landing Page</option>
+                        <option class="search-product__option" value="Psd Template">Psd Template</option>
+                        <option class="search-product__option" value="Plugins">Plugins</option>
+                        <option class="search-product__option" value="HTML Template">HTML Template</option>
+                        <option class="search-product__option" value="Components">Components</option>
+                        <option class="search-product__option" value="Joomla Template">Joomla Template</option>
+
+                    </select>
+
+                    <button class="search-product__submit-btn" type="submit" name="search-product-btn">
+                        Search Now
+                    </button>
+                </form>
+
+            </div>
+        </section>
+
+
+        <section class="features">
+            <div class="container">
+                <div class="features__inner">
+
+                    <div class="feature">
+                        <img class="feature__img" src="images/feature-1.png" alt="feature UX research feature">
+                        <div class="feature__title">
+                            Best UX Research
+                        </div>
+
+                        <div class="feature__descr">
+                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                            the mattis, leo quam aliquet diam
+                            congue is laoreet elit metus.
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <img class="feature__img" src="images/feature-2.png" alt="responsebility feature">
+                        <div class="feature__title">
+                            Fully Responsive
+                        </div>
+
+                        <div class="feature__descr">
+                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                            the mattis, leo quam aliquet diam
+                            congue is laoreet elit metus.
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <img class="feature__img" src="images/feature-3.png" alt="buy and sell feature">
+                        <div class="feature__title">
+                            Buy & Sell Easily
+                        </div>
+
+                        <div class="feature__descr">
+                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                            the mattis, leo quam aliquet diam
+                            congue is laoreet elit metus.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <section class="featured-products">
+            <div class="container">
+
+                <div class="featured-products__title-block">
+                    <div class="featured-products__title">
+                        Weekly Featured Products
+                    </div>
+                    <div class="featured-products__arrows">
+                        <span class="lnr lnr-chevron-left prev-arrow"></span>
+                        <span class="lnr lnr-chevron-right next-arrow"></span>
+                    </div>
+                </div>
+
+
+                <div class="featured-products__slider">
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="featured-products__item featured-item">
+                        <div class="featured-item__img">
+                            <div class="featured-item__img-btn">More Info</div>
+                            <div class="featured-item__img-btn">Live Demo</div>
+                        </div>
+
+
+                        <div class="featured-item__content">
+                            <div class="featured-item__title">One Page Resume Template</div>
+
+                            <div class="featured-item__user-avat"></div>
+                            <div class="featured-item__user-name">AazzTech</div>
+                            <div class="wordpress">WordPress</div>
+
+                            <div class="featured-item__descr">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+                                mattis,
+                                leo quam aliquet congue
+                                placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
+                                leo
+                                quam aliquet congue justo
+                                ut scelerisque.
+                            </div>
+
+                            <div class="featured-item__tags-row">
+                                <a href="#" class="featured-item__tag">website</a>
+                                <a href="#" class="featured-item__tag">plugin</a>
+                                <a href="#" class="featured-item__tag">landing page</a>
+                            </div>
+
+                            <div class="featured-item__bottom">
+
+                                <div class="featured-item__price">$10 - $50</div>
+                                <span class="lnr lnr-heart likes">46</span>
+                                <span class="lnr lnr-cart sales">634</span>
+
+                                <div class="rate-stars">
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star--half"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <!-- <div class="featured-products__item featured-item">
+                        <div class="featured-item__img">
+
+                            <div class="featured-item__img-btn">More Info</div>
+                            <div class="featured-item__img-btn">Live Demo</div>
+                        </div>
+
+                        <div class="featured-item__title">One Page Resume Template</div>
+
+                        <div class="featured-item__user-avat"></div>
+                        <div class="featured-item__user-name">AazzTech</div>
+                        <div class="wordpress">WordPress</div>
+
+                        <div class="featured-item__descr">
+                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+                            mattis,
+                            leo quam aliquet congue
+                            placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
+                            quam aliquet congue justo
+                            ut scelerisque.
+                        </div>
+
+                        <div class="featured-item__tags-row">
+                            <a href="#" class="featured-item__tag">website</a>
+                            <a href="#" class="featured-item__tag">plugin</a>
+                            <a href="#" class="featured-item__tag">landing page</a>
+                        </div>
+
+                        <div class="featured-item__bottom">
+
+                            <div class="featured-item__price">$10 - $50</div>
+                            <span class="lnr lnr-heart likes">46</span>
+                            <span class="lnr lnr-cart sales">634</span>
+
+                            <div class="rate-stars">
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star--half"></div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="featured-products__item featured-item">
+                        <div class="featured-item__img">
+
+                            <div class="featured-item__img-btn">More Info</div>
+                            <div class="featured-item__img-btn">Live Demo</div>
+                        </div>
+
+                        <div class="featured-item__title">One Page Resume Template</div>
+
+                        <div class="featured-item__user-avat"></div>
+                        <div class="featured-item__user-name">AazzTech</div>
+                        <div class="wordpress">WordPress</div>
+
+                        <div class="featured-item__descr">
+                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+                            mattis,
+                            leo quam aliquet congue
+                            placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
+                            quam aliquet congue justo
+                            ut scelerisque.
+                        </div>
+
+                        <div class="featured-item__tags-row">
+                            <a href="#" class="featured-item__tag">website</a>
+                            <a href="#" class="featured-item__tag">plugin</a>
+                            <a href="#" class="featured-item__tag">landing page</a>
+                        </div>
+
+                        <div class="featured-item__bottom">
+
+                            <div class="featured-item__price">$10 - $50</div>
+                            <span class="lnr lnr-heart likes">46</span>
+                            <span class="lnr lnr-cart sales">634</span>
+
+                            <div class="rate-stars">
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star--half"></div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="featured-products__item featured-item">
+                        <div class="featured-item__img">
+                    
+                            <div class="featured-item__img-btn">More Info</div>
+                            <div class="featured-item__img-btn">Live Demo</div>
+                        </div>
+                    
+                        <div class="featured-item__title">One Page Resume Template</div>
+                    
+                        <div class="featured-item__user-avat"></div>
+                        <div class="featured-item__user-name">AazzTech</div>
+                        <div class="wordpress">WordPress</div>
+                    
+                        <div class="featured-item__descr">
+                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+                            mattis,
+                            leo quam aliquet congue
+                            placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
+                            quam aliquet congue justo
+                            ut scelerisque.
+                        </div>
+                    
+                        <div class="featured-item__tags-row">
+                            <a href="#" class="featured-item__tag">website</a>
+                            <a href="#" class="featured-item__tag">plugin</a>
+                            <a href="#" class="featured-item__tag">landing page</a>
+                        </div>
+                    
+                        <div class="featured-item__bottom">
+                    
+                            <div class="featured-item__price">$10 - $50</div>
+                            <span class="lnr lnr-heart likes">46</span>
+                            <span class="lnr lnr-cart sales">634</span>
+                    
+                            <div class="rate-stars">
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star--half"></div>
+                            </div>
+                        </div>
+                    
+                    
+                    </div>
+                    
+                    <div class="featured-products__item featured-item">
+                        <div class="featured-item__img">
+                    
+                            <div class="featured-item__img-btn">More Info</div>
+                            <div class="featured-item__img-btn">Live Demo</div>
+                        </div>
+                    
+                        <div class="featured-item__title">One Page Resume Template</div>
+                    
+                        <div class="featured-item__user-avat"></div>
+                        <div class="featured-item__user-name">AazzTech</div>
+                        <div class="wordpress">WordPress</div>
+                    
+                        <div class="featured-item__descr">
+                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+                            mattis,
+                            leo quam aliquet congue
+                            placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
+                            quam aliquet congue justo
+                            ut scelerisque.
+                        </div>
+                    
+                        <div class="featured-item__tags-row">
+                            <a href="#" class="featured-item__tag">website</a>
+                            <a href="#" class="featured-item__tag">plugin</a>
+                            <a href="#" class="featured-item__tag">landing page</a>
+                        </div>
+                    
+                        <div class="featured-item__bottom">
+                    
+                            <div class="featured-item__price">$10 - $50</div>
+                            <span class="lnr lnr-heart likes">46</span>
+                            <span class="lnr lnr-cart sales">634</span>
+                    
+                            <div class="rate-stars">
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star--half"></div>
+                            </div>
+                        </div>
+                    
+                    
+                    </div> -->
+
+                </div>
+
+
+            </div>
+        </section>
+
+
+
+
+
+    </main>
 
 
 
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.min.js"></script>
 </body>
+
 </html>
