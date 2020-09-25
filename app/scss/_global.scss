@@ -1,44 +1,43 @@
-
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-    font-family: "Quicksand", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1;
-    background-color: #ffffff;
-    color: $text-color-1;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  background-color: #ffffff;
+  color: $text-color-1;
 }
 
 .container {
-    max-width: 1170px;
-    padding: 0 15px;
-    margin: 0 auto;
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 a {
-    
-    text-decoration: none;
-    color: $text-color-1;
+  text-decoration: none;
+  color: $text-color-1;
 }
-
 
 .lnr {
-    font-family: 'Linearicons-Free';
-    // speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  font-family: "Linearicons-Free";
+  // speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
+
