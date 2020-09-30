@@ -1,10 +1,42 @@
-$(document).ready(function () {
-    $('.featured-products__slider').slick({
+jQuery(document).ready(function () {
+    jQuery('.featured-products__slider').slick({
            slidesToShow: 1,
                slidesToScroll: 1,
          prevArrow:
-             '<button class="slick-arrow slick-prev"><span class="lnr lnr-chevron-left"></span></button>',
+             '<button class="slider-arrow slick-prev"><span class="lnr lnr-chevron-left"></span></button>',
              nextArrow:
-             '<button class="slick-arrow slick-next"><span class="lnr lnr-chevron-right "></span></button>',
+             '<button class="slider-arrow slick-next"><span class="lnr lnr-chevron-right "></span></button>',
      });
+
+
+    jQuery('.follower-feed__catalogue').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+         prevArrow:
+             '<button class="catalogue-arrow prev-arrow"><span class="lnr lnr-chevron-left"></span></button>',
+             nextArrow:
+             '<button class="catalogue-arrow next-arrow"><span class="lnr lnr-chevron-right"></span></button>',
+    });
+
+
+
+ var mixer = mixitup('.new-release__catalogue');
+
+
 });
+
+    jQuery(".rate-stars").rateYo({
+        rating: 5,
+starWidth: '15px',
+normalFill: 'transparent',
+ratedFillBorder: '#ffc000',
+ rating: 4.5,
+     halfStar: true
+
+    });
+   
+
+
+
+
+

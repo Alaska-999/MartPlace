@@ -2,6 +2,37 @@
 @import "_global";
 @import "_fonts";
 
+@mixin button-style {
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+  outline: transparent;
+  font-family: "Quicksand";
+  background-color: $color-1;
+  border: 1px solid $color-1;
+  transition: background-color 0.3s;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+@mixin button-state-hover {
+  background-color: transparent;
+  color: $color-1;
+  font-weight: 600;
+  box-shadow: 0 0 0 1px $color-1;
+}
+
+@mixin button-state-focus {
+  background-color: transparent;
+  color: $color-2;
+  font-weight: 600;
+  border-color: $color-2;
+  box-shadow: 0 0 0 1px $color-2;
+}
+
+@mixin button-state-active {
+  background-color: #5578f852;
+}
+
 .top-header {
   padding: 27px 0 25px 0;
   background-color: #eef1f3;
@@ -17,15 +48,26 @@
   }
 
   &__seller-link {
-    color: #fff;
-    background-color: $color-1;
+    @include button-style();
     border-radius: 40px;
-    text-align: center;
-    padding: 11px 20px;
+    padding: 10px 20px;
     font-size: 14px;
     height: 38px;
     margin-right: 50px;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+    @include button-style;
+
+    &:hover {
+      @include button-state-hover;
+    }
+
+    &:focus {
+      @include button-state-focus;
+    }
+
+    &:active {
+      @include button-state-active;
+    }
   }
 
   &__menu {
@@ -164,6 +206,10 @@
     width: 360px;
     position: relative;
     outline: transparent;
+
+    &:focus {
+      border: 2px solid $color-1;
+    }
   }
 
   &__input::placeholder {
@@ -177,12 +223,24 @@
     outline: transparent;
     border: none;
     width: 70px;
-    height: 45px;
+    height: 44px;
     position: relative;
-    right: 75px;
+    top: 1px;
+    right: 74px;
     font-size: 15px;
     line-height: 2;
     color: #fff;
+    @include button-style;
+
+    &:focus,
+    &:hover {
+      box-shadow: 0 0 0px 2px $color-1;
+      border: none;
+    }
+
+    &:active {
+      @include button-state-active;
+    }
   }
 }
 
@@ -215,7 +273,6 @@
   &__btn {
     display: inline-block;
     color: #ffffff;
-
     text-align: center;
     border: 1px solid #ffffff;
     border-radius: 35px;
@@ -227,6 +284,15 @@
   &__btn:hover {
     background-color: #ffffff;
     color: $color-1;
+  }
+
+  &__btn:focus {
+    box-shadow: 0 0 2px 2px #ffffff;
+  }
+
+  &__btn:active {
+    box-shadow: 0 0 1px 4px $color-2;
+    color: $color-2;
   }
 
   &__btn + &__btn {
@@ -243,7 +309,8 @@
   border-radius: 6px;
   box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.158);
   text-align: left;
-  z-index: 3 !important;
+  z-index: 3;
+  display: flex;
 
   &__input {
     padding: 20px 30px;
@@ -256,6 +323,10 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1;
+    &:focus {
+      box-shadow: 0 0 0px 1px $color-1;
+      border: 1px solid $color-1;
+    }
   }
 
   &__input::placeholder {
@@ -267,52 +338,45 @@
     padding: 19px 30px;
     height: 55px;
     border: 1px solid rgb(220, 220, 220);
+    border-left: none;
     border-radius: 0 4px 4px 0;
     font-family: "Quicksand", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1;
     color: #676767;
-    position: relative;
-    left: -7px;
+
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     background: url(../images/icons/lnr-chevron-down.svg) 90% / 12px no-repeat;
+    &:focus {
+      box-shadow: 0 0 0px 1px $color-1;
+      border: 1px solid $color-1;
+    }
   }
 
   &__submit-btn {
     display: inline-block;
-    border: 3px solid $color-1;
     border-radius: 4px;
-    background-color: $color-1;
     margin-left: 28px;
     padding: 14px 60px;
     max-width: 223px;
-    text-align: center;
-    color: #fff;
-    outline: transparent;
     font-size: 16px;
-    font-family: "Quicksand";
-    transition: 0.4s all;
-  }
 
-  &__submit-btn:hover {
-    background-color: #ffffff;
-    color: $color-1;
-    font-weight: 600;
-  }
+    @include button-style;
 
-  &__submit-btn:focus {
-    background-color: #426afd52;
-    color: $color-1;
-    font-weight: 600;
-    border-color: $color-1;
-  }
+    &:hover {
+      @include button-state-hover;
+    }
 
-  &__submit-btn:active {
-    color: $color-2;
-    border-color: $color-2;
+    &:focus {
+      @include button-state-focus;
+    }
+
+    &:active {
+      @include button-state-active;
+    }
   }
 }
 
@@ -338,7 +402,7 @@
 // }
 
 .features {
-  padding: 85px 0 123px;
+  padding: 85px 0 95px;
 
   &__inner {
     display: flex;
@@ -377,50 +441,22 @@
     transform: scale(1.04);
   }
 }
+// .psd-icon {
+//   background-image: url(../images/icons/plugin.svg);
 
-.featured-products {
-  padding: 120px 0;
-  background-color: #eff1f5;
+// }
 
-  &__title {
-    position: relative;
-  }
+// .wordpress-icon {
+//   background-image: url(../images/icons/wordpress.svg);
+// }
 
-  .slick-arrow {
-    width: 60px;
-    height: 43px;
-    font-size: 14px;
-    color: #fff;
-    top: -105px;
-    background-color: rgb(115, 71, 193);
-    position: absolute;
-  }
+// .html-icon {
+//   background-image: url(../images/icons/html-icon.svg);
+// }
 
-  .slick-arrow::before {
-    display: none;
-  }
-
-  .slick-prev {
-    left: auto;
-    right: 87px;
-    border-radius: 30px 0 0 30px;
-  }
-
-  .slick-next {
-    right: 27px;
-    border-radius: 0 30px 30px 0;
-  }
-
-  .lnr-chevron-left:before,
-  .lnr-chevron-right:before {
-    font-size: 14px;
-  }
-
-  &__slider {
-    min-height: 450px;
-  }
-}
-
+//common product properties
+//common product properties
+//common product properties
 //common product properties
 
 .products-section-title {
@@ -434,26 +470,50 @@
   margin-bottom: 50px;
 }
 
-.product {
-  &__tag {
-    display: inline-block;
-    background-color: rgba(237, 240, 240, 0.938);
-    margin-right: 5px;
-    padding: 0 20px;
-    line-height: 32px;
-    font-size: 15px;
-    border-radius: 20px;
-    outline: transparent;
-    transition: all 0.3s;
-  }
-
-  &__tag:hover {
-    color: #ffffff;
+.product__tag-btn {
+  display: inline-block;
+  background-color: #f1f3f6;
+  margin-right: 5px;
+  font-size: 15px;
+  border-radius: 25px;
+  outline: transparent;
+  transition: all 0.2s;
+  border: transparent;
+  color: #747b86;
+  cursor: pointer;
+  padding: 7px 20px;
+  line-height: 1.2;
+   &:hover {
+    color: #fff;
     font-weight: 500;
     background-color: $color-1;
   }
+}
+
+.tag-btn--states {
+  &:focus {
+    box-shadow: 0 0 0 2px $color-1;
+    color: $color-1;
+    font-weight: 500;
+  }
+  &:active {
+    box-shadow: 0 0 2px 3px $color-2;
+  }
+
+
+}
+
+.product {
+  &__title {
+    display: block;
+    color: #000;
+    font-weight: 500;
+    line-height: 1.5;
+    outline: none;
+  }
 
   &__img-btn {
+    outline: transparent;
     transition: all 0.3s;
     border: 1px solid #e6e7e8;
     border-radius: 45px;
@@ -487,26 +547,59 @@
   }
 
   &__img--hover:hover {
-    opacity: 0.922;
-     z-index: 2;
+    opacity: 0.962;
+    z-index: 2;
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+
+  &__author-link {
+    display: flex;
+    align-items: center;
+    outline: transparent;
+  }
+
+  &__author-name {
+    font-weight: 500;
+    margin-left: 5px;
+    display: inline-block;
+    line-height: 1.2;
+  }
+
+  &__author-avat {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: block;
+  }
+
+  &__price {
+    display: inline-block;
+    font-size: 15px;
+    line-height: 2;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 20px;
+    font-weight: 500;
   }
 
   &__sales,
   &__favourites {
     display: inline-block;
-    position: relative;
-    margin-right: 21px;
-    position: relative;
     background-color: transparent;
     border: none;
     outline: transparent;
     font-size: 15px;
     cursor: pointer;
+    color: #7e7e7e;
   }
 
-  &__heart,
-  &__cart {
-    margin-right: 6px;
+  &__heart::before {
+    color: #7347c1;
   }
 
   &__sales {
@@ -514,30 +607,83 @@
   }
 }
 
-.wordpress {
+.product-tag {
   display: inline-block;
-  width: 102px;
-  height: 15px;
   position: relative;
-  left: 17px;
+  line-height: 1.5;
   font-size: 15px;
   color: rgb(115, 71, 193);
-  margin-left: 29px;
+  margin-left: 45px;
+  cursor: pointer;
+  outline: transparent;
 }
 
-.wordpress::before {
-  content: "";
-  background-image: url(../images/icons/wordpress.svg);
-  background-repeat: no-repeat;
-  width: 20px;
-  height: 19px;
-  font-size: 14px;
+.product-tag-icon {
+  display: inline-block;
+  font-size: 0px;
   position: absolute;
-  top: 0;
-  left: -23px;
+  top: 2px;
+  left: -22px;
+  outline: transparent;
+}
+
+.rate-stars {
+  display: inline-block;
+  text-align: right;
+}
+
+.lnr-chevron-left:before,
+.lnr-chevron-right:before {
+  font-size: 21px;
 }
 
 //common product properties
+//common product properties
+//common product properties
+//common product properties
+
+.featured-products {
+  padding: 120px 0;
+  background-color: #eff1f5;
+
+  &__title {
+    position: relative;
+  }
+
+  .slider-arrow {
+    width: 60px;
+    height: 43px;
+    font-size: 14px;
+    color: #fff;
+    top: -105px;
+    background-color: $color-3;
+    position: absolute;
+   transition: box-shadow 0.3s;
+    &:hover {
+      box-shadow: 0 0 3px 2px rgba(84, 25, 187, 0.911);
+    }
+  }
+
+  .slider-arrow::before {
+    display: none;
+  }
+
+  .slick-prev {
+    left: auto;
+    right: 91px;
+    border-radius: 30px 0 0 30px;
+    transition: box-shadow 0.1s;
+  }
+
+  .slick-next {
+    right: 31px;
+    border-radius: 0 30px 30px 0;
+  }
+
+  &__slider {
+    min-height: 450px;
+  }
+}
 
 .featured-item {
   border-radius: 4px;
@@ -569,191 +715,266 @@
 
   &__info {
     display: inline-block;
-    padding: 50px 50px 24px;
+    padding: 40px 52px 20px;
     max-width: 586px;
     position: absolute;
-    height: 450px;
   }
 
   &__title {
     font-size: 24px;
-    font-weight: 500;
-    line-height: 1.2;
     max-width: 330px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
-  &__author {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-  }
+ 
 
-  &__author-avat {
-    border-radius: 50%;
-    background-color: rgb(115, 71, 193);
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-  }
-
-  &__author-name {
-    font-size: 15px;
-    display: inline-block;
-    margin-left: 8px;
-    color: #000;
+  &__tag-btn {
+    margin-bottom: 40px;
   }
 
   &__descr {
     max-width: 580px;
     line-height: 30px;
-  }
-
-  &__tag {
-    margin-bottom: 40px;
+    color: #555555;
+    font-size: 16px;
+    margin-bottom: 35px;
   }
 
   &__bottom {
-    display: flex;
-    align-items: center;
-
-    padding: 22px 0;
+    padding: 26px 0;
     border-top: 1px solid #ececec;
+    position: relative;
+  }
+
+  &__stars {
+    position: relative;
+    top: -23px;
+    left: 400px;
   }
 
   &__price {
-    padding-left: 20px;
-    padding: 0 20px;
     background-color: $color-1;
-    font-size: 15px;
-    line-height: 30px;
-    font-weight: 500;
-    text-align: center;
     color: #fff;
-    border-radius: 15px;
-    margin-right: 45px;
-  }
-}
-
-.rating {
-  position: absolute;
-  right: 50px;
-  &__star,
-  &__star--half {
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 17px;
-    height: 17px;
-    margin-right: 3px;
-  }
-
-  &__star {
-    background-image: url(../images/icons/rare-star-half.svg);
-  }
-
-  &__star--half {
-    background-image: url(../images/icons/rare-star-half.svg);
+    margin-right: 15px;
+    padding: 0 20px;
   }
 }
 
 .new-release {
   background-color: #f2f4f8;
-  padding: 120px 0;
-
-  &__tags {
+  padding: 120px 0 70px;
+  
+&__catalogue {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 30px;
+    margin-bottom: 60px;
+  }
+ 
+ &__tags {
     border-radius: 4px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 1px 2px 0px rgba(90, 93, 100, 0.1);
     padding: 30px;
     display: flex;
     justify-content: space-around;
+    margin-bottom: 50px;
   }
+
+  &__all-prod-btn {
+    cursor: pointer;
+    display: block;
+    padding: 20px;
+    max-width: 190px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: "Quicksand";
+    color: rgb(255, 255, 255);
+    line-height: 1.3;
+    border-radius: 50px;
+    outline: transparent;
+    @include button-style;
+ &:hover {
+      @include button-state-hover;
+    }
+
+    &:focus {
+      @include button-state-focus;
+    }
+
+    &:active {
+      @include button-state-active;
+    }
+  }
+
 
 
 }
-.new-release__catalogue.catalouge {
-    display: grid;
-    grid-template-columns: 1fr 1fr  1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 30px;
-  
-  }
-.new-product {
-  max-width: 361px ;
+
+   
+.new-product,
+.feed-product {
+  max-width: 361px;
   background-color: #ffffff;
 
   &__img-block {
     max-width: 361px;
     position: relative;
   }
-   &__img {
-   width: 100%;
-   height: 100%;
-    }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
 
   &__img--hover {
- max-width: 361px;
-  width: 100%;
-  height: 100%;
+    max-width: 361px;
+    width: 100%;
+    height: 100%;
   }
-  
+
+  &__info {
+    padding: 19px 29px;
+    position: relative;
+  }
+
   &__title {
+    margin-bottom: 13px;
     font-size: 20px;
-    font-weight: 500;
-    line-height: 2;
   }
 
+  &__price {
+    background-color: #e6f1fd;
+    color: $color-1;
+    padding: 0 16px;
+  }
 
+  &__sales {
+    position: relative;
+    top: 0;
+    left: 130px;
+  }
+
+  &__descr {
+    color: #555555;
+    font-size: 16px;
+    border-bottom: 1px solid #ececec;
+    padding-bottom: 30px;
+    line-height: 30px;
+  }
+
+  &__bottom {
+    padding: 16px 0 0;
+  }
+  &__stars {
+    position: relative;
+    top: -23px;
+    left: 128px;
+    margin-left: 5px;
+  }
 }
 
 
 
 
-// .new-product__img-block {
-// }
-// .new-product__img--hover {
-// }
-// .product-img--hover {
-// }
-// .product-img-btn {
-// }
-// .product-info {
-// }
-// .new-product__info {
-// }
-// .new-product__title {
-// }
-// .product__author {
-// }
-// .product__author-link {
-// }
-// .new-product__author-link {
-// }
-// .author-name {
-// }
-// .new-product__author-name {
-// }
-// .wordpress {
-// }
-// .new-product__descr {
-// }
-// .new-product__bottom {
-// }
-// .new-product__price {
-// }
-// .product__favourites {
-// }
-// .lnr {
-// }
-// .lnr-heart {
-// }
-// .product__heart {
-// }
-// .product__sales {
-// }
-// .lnr-cart {
-// }
-// .productm__cart {
-// }
 
+
+
+// 11
+
+.follower-feed {
+  padding: 120px 0 100px;
+  background-color: #eff1f5;
+
+  &__title {
+    position: relative;
+  }
+
+  .catalogue-arrow {
+    outline: none;
+    border: none;
+    width: 60px;
+    height: 43px;
+    font-size: 14px;
+    color: #fff;
+    top: -120px;
+    background-color: $color-1;
+    position: absolute;
+    transition: box-shadow 0.3s;
+    &:hover {
+      box-shadow: 0 0 3px 1px $color-2;
+    }
+    &:active {
+       box-shadow: 0 0 2px 2px $color-2;
+    }
+  }
+
+  .catalogue-arrow::before {
+    display: none;
+  }
+
+  .prev-arrow {
+    
+    left: auto;
+    right: 94px;
+    border-radius: 30px 0 0 30px;
+  }
+
+  .next-arrow {
+    right: 35px;
+    border-radius: 0 30px 30px 0;
+  }
+}
+
+
+.facts {
+ background-color: #212225;
+padding: 90px 0;
+
+&__inner {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+&__item {
+  color: #fff;
+}
+&__number {
+font-size: 36px;
+// display: block;
+
+&--red{
+color: #ff6a6d;
+}
+&--blue {
+ color: #58c9e9;
+}
+&--green {
+  color:#77de51 ;
+}
+&--yellow {
+color: #feb71d;
+}
+}
+
+&__icon {
+  display: block;
+  font-size: 48px;
+}
+
+}
+
+
+
+.briefcase {
+  
+  font-family: "Linearicons";
+  color: rgb(254, 183, 29);
+  line-height: 0.75;
+  text-align: left;
+  position: absolute;
+  left: 416px;
+  top: 5221.5px;
+  z-index: 279;
+}

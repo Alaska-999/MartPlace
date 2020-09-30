@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mart Place</title>
-    <!-- Add the slick-theme.css if you want default styling -->
+
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
-    <!-- Add the slick-theme.css if you want default styling -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="css.libs.min.css">
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
@@ -28,8 +27,6 @@
                     <div class="top-header__left-pannel">
 
                         <a href="#" class="top-header__seller-link">Become a Seller</a>
-
-
                         <div class="top-header__menu">
                             <a href="#" class="top-header__menu-item">
                                 <span class="lnr lnr-alarm "></span>
@@ -183,6 +180,7 @@
         </div>
     </header>
 
+
     <main>
         <section class="welcome">
             <div class="container">
@@ -201,7 +199,6 @@
                     Popular Products
                 </a>
 
-
                 <form class="search-product" action="#" target="_self">
                     <label class="search-product__label" for="search-product__input"></label>
                     <input class="search-product__input" id="search-product__input" type="search" name="search-product"
@@ -216,7 +213,6 @@
                         <option class="search-product__option" value="HTML Template">HTML Template</option>
                         <option class="search-product__option" value="Components">Components</option>
                         <option class="search-product__option" value="Joomla Template">Joomla Template</option>
-
                     </select>
 
                     <button class="search-product__submit-btn" type="submit" name="search-product-btn">
@@ -292,12 +288,102 @@
                         </div>
 
                         <div class="featured-item__info">
-                            <div class="featured-item__title">One Page Resume Template</div>
+                            <a href="#" class="product__title featured-item__title">One Page Resume Template</a>
 
-                            <div class="featured-item__author">
-                                <div class="featured-item__author-avat"></div>
-                                <div class="featured-item__author-name">AazzTech</div>
-                                <div class="wordpress">WordPress</div>
+                            <div class="product__author featured-item__author">
+
+                                <img class="product__author-avat" src="images/account.png">
+                                <span class="product__author-name featured-item__author-name">Theme-Valley</span>
+                                <a href="#" class="product-tag">
+                                    <!-- <svg class="product-tag-icon wordpress-icon" width="16px"
+                                                            height="16px">Wordpress</svg> -->
+                                    <svg class="product-tag-icon" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px">
+                                        <path fill-rule="evenodd" fill="rgb(115, 71, 193)"
+                                            d="M0.166,7.666 C0.166,11.808 3.524,15.166 7.666,15.166 C11.808,15.166 15.166,11.808 15.166,
+                                                                    7.666 C15.166,3.524 11.808,0.165 7.666,0.165 C3.524,0.165 0.166,3.524 0.166,7.666 ZM0.744,7.666 C0.744,
+                                                                    6.662 0.960,5.710 1.344,4.849 L4.646,13.895 C2.337,12.773 0.744,10.405 0.744,7.666 ZM7.666,14.587 C6.987,
+                                                                    14.587 6.331,14.488 5.711,14.306 L7.788,8.272 L9.916,14.101 C9.930,14.135 9.947,14.165 9.965,14.195 C9.246,
+                                                                    14.449 8.472,14.587 7.666,14.587 ZM13.261,7.536 C13.655,6.548 13.788,5.759 13.788,5.056 C13.788,4.802 13.770,4.566 13.740,
+                                                                    4.344 C14.280,5.331 14.587,6.462 14.587,7.666 C14.587,10.220 13.204,12.449 11.147,13.648 L13.261,7.536 ZM11.768,5.407 C12.031,5.868 12.339,6.461 12.339,7.316 C12.339,7.909 12.163,8.654 11.812,9.554 L11.122,
+                                                                    11.860 L8.620,4.421 C9.038,4.397 9.412,4.355 9.412,4.355 C9.785,4.310 9.740,3.763 9.368,3.784 C9.368,3.784 8.247,3.872 7.523,3.872 C6.843,
+                                                                    3.872 5.701,3.784 5.701,3.784 C5.327,3.763 5.284,4.333 5.656,4.355 C5.656,4.355 6.010,4.397 6.383,4.421 L7.460,7.376 L5.946,11.918 L3.425,4.421 C3.842,4.397 4.218
+                                                                    ,4.355 4.218,4.355 C4.591,4.310 4.545,3.763 4.173,3.784 C4.173,3.784 3.053,3.872 2.328,3.872 C2.198,3.872 2.046,3.869 1.883,3.864 C3.121,1.985 5.249,0.744 7.666,0.744 C9.469,0.744 11.109,1.433 12.340,
+                                                                    2.562 C12.311,2.559 12.281,2.556 12.251,2.556 C11.570,2.556 11.089,3.148 11.089,3.784 C11.089,4.355 11.418,4.838 11.768,5.407 Z" />
+                                    </svg>
+                                    Plugin
+                                </a>
+                            </div>
+
+                            <p class="featured-item__descr">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+                                mattis,
+                                leo quam aliquet congue
+                                placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
+                                leo
+                                quam aliquet congue justo
+                                ut scelerisque.
+                            </p>
+                            <a href="#" class="product__tag-btn featured-item__tag-btn ">website</a>
+                            <a href="#" class="product__tag-btn featured-item__tag-btn ">plugin</a>
+                            <a href="#" class="product__tag-btn featured-item__tag-btn ">landing page</a>
+                            <div class="product__bottom featured-item__bottom ">
+                                <div class="product__price featured-item__price">$10 - $50</div>
+
+                                <button class="product__favourites">
+                                    <span class="lnr lnr-heart product__heart"></span>
+                                    46
+                                </button>
+
+                                <button class="product__sales">
+                                    <span class="lnr lnr-cart product__cart"></span>
+                                    634
+                                </button>
+
+                                <div class="featured-item__stars">
+                                    <div class="rate-stars"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="featured-item">
+                        <div class="featured-item__img-block">
+                            <img class="featured-item__img" src="images/feature-prod-1.jpg" alt="">
+                            <div class="featured-item__img--hover product__img--hover">
+                                <a href="#" class="product__img-btn">More Info</a>
+                                <a href="#" class="product__img-btn">Live Demo</a>
+                            </div>
+                        </div>
+
+                        <div class="featured-item__info">
+                            <a href="#" class="product__title featured-item__title">One Page Resume Template</a>
+
+                            <div class="product__author featured-item__author">
+
+                                <img class="product__author-avat" src="images/account.png">
+                                <span class="product__author-name featured-item__author-name">Theme-Valley</span>
+                                <a href="#" class="product-tag">
+                                    <!-- <svg class="product-tag-icon wordpress-icon" width="16px"
+                                    height="16px">Wordpress</svg> -->
+                                    <svg class="product-tag-icon" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px">
+                                        <path fill-rule="evenodd" fill="rgb(115, 71, 193)"
+                                            d="M0.166,7.666 C0.166,11.808 3.524,15.166 7.666,15.166 C11.808,15.166 15.166,11.808 15.166,
+                                            7.666 C15.166,3.524 11.808,0.165 7.666,0.165 C3.524,0.165 0.166,3.524 0.166,7.666 ZM0.744,7.666 C0.744,
+                                            6.662 0.960,5.710 1.344,4.849 L4.646,13.895 C2.337,12.773 0.744,10.405 0.744,7.666 ZM7.666,14.587 C6.987,
+                                            14.587 6.331,14.488 5.711,14.306 L7.788,8.272 L9.916,14.101 C9.930,14.135 9.947,14.165 9.965,14.195 C9.246,
+                                            14.449 8.472,14.587 7.666,14.587 ZM13.261,7.536 C13.655,6.548 13.788,5.759 13.788,5.056 C13.788,4.802 13.770,4.566 13.740,
+                                            4.344 C14.280,5.331 14.587,6.462 14.587,7.666 C14.587,10.220 13.204,12.449 11.147,13.648 L13.261,7.536 ZM11.768,5.407 C12.031,5.868 12.339,6.461 12.339,7.316 C12.339,7.909 12.163,8.654 11.812,9.554 L11.122,
+                                            11.860 L8.620,4.421 C9.038,4.397 9.412,4.355 9.412,4.355 C9.785,4.310 9.740,3.763 9.368,3.784 C9.368,3.784 8.247,3.872 7.523,3.872 C6.843,
+                                            3.872 5.701,3.784 5.701,3.784 C5.327,3.763 5.284,4.333 5.656,4.355 C5.656,4.355 6.010,4.397 6.383,4.421 L7.460,7.376 L5.946,11.918 L3.425,4.421 C3.842,4.397 4.218
+                                            ,4.355 4.218,4.355 C4.591,4.310 4.545,3.763 4.173,3.784 C4.173,3.784 3.053,3.872 2.328,3.872 C2.198,3.872 2.046,3.869 1.883,3.864 C3.121,1.985 5.249,0.744 7.666,0.744 C9.469,0.744 11.109,1.433 12.340,
+                                            2.562 C12.311,2.559 12.281,2.556 12.251,2.556 C11.570,2.556 11.089,3.148 11.089,3.784 C11.089,4.355 11.418,4.838 11.768,5.407 Z" />
+                                    </svg>
+                                    Plugin
+                                </a>
                             </div>
 
                             <p class="featured-item__descr">
@@ -310,12 +396,134 @@
                                 ut scelerisque.
                             </p>
 
-                            <a href="#" class="product__tag featured-item__tag ">website</a>
-                            <a href="#" class="product__tag featured-item__tag ">plugin</a>
-                            <a href="#" class="product__tag featured-item__tag ">landing page</a>
+                            <a href="#" class="product__tag-btn featured-item__tag-btn ">website</a>
+                            <a href="#" class="product__tag-btn featured-item__tag-btn ">plugin</a>
+                            <a href="#" class="product__tag-btn featured-item__tag-btn">landing page</a>
 
-                            <div class="featured-item__bottom">
-                                <div class="featured-item__price">$10 - $50</div>
+                            <div class="product__bottom featured-item__bottom">
+                                <div class="product__price featured-item__price">$10 - $50</div>
+
+                                <button class="product__favourites">
+                                    <span class="lnr lnr-heart product__heart"></span>
+                                    46
+                                </button>
+
+                                <button class="product__sales">
+                                    <span class="lnr lnr-cart product__cart"></span>
+                                    634
+                                </button>
+                                <div class="featured-item__stars">
+                                    <div class="rate-stars"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="featured-item">
+                        <div class="featured-item__img-block">
+                            <img class="featured-item__img" src="images/feature-prod-1.jpg" alt="">
+                            <div class="featured-item__img--hover product__img--hover">
+                                <a href="#" class="product__img-btn">More Info</a>
+                                <a href="#" class="product__img-btn">Live Demo</a>
+                            </div>
+                        </div>
+
+                        <div class="featured-item__info">
+                            <a href="#" class="product__title featured-item__title">One Page Resume Template</a>
+
+                            <div class="product__author featured-item__author">
+                                <div class="product__author-avat featured-item__author-avat"></div>
+                                <div class="product__author-name featured-item__author-name">AazzTech</div>
+                                <a href="#" class="product-tag">
+                                    <!-- <svg class="product-tag-icon wordpress-icon" width="16px"
+                                                                        height="16px">Wordpress</svg> -->
+                                    <svg class="product-tag-icon" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px">
+                                        <path fill-rule="evenodd" fill="rgb(115, 71, 193)"
+                                            d="M0.166,7.666 C0.166,11.808 3.524,15.166 7.666,15.166 C11.808,15.166 15.166,11.808 15.166,7.666 C15.166,3.524 11.808,0.165 7.666,0.165 C3.524,0.165 0.166,3.524 0.166,7.666 ZM0.744,7.666 C0.744,6.662 0.960,5.710 1.344,4.849 L4.646,13.895 C2.337,12.773 0.744,10.405 0.744,7.666 ZM7.666,14.587 C6.987,14.587 6.331,14.488 5.711,14.306 L7.788,8.272 L9.916,14.101 C9.930,14.135 9.947,14.165 9.965,14.195 C9.246,14.449 8.472,14.587 7.666,14.587 ZM13.261,7.536 C13.655,6.548 13.788,5.759 13.788,5.056 C13.788,4.802 13.770,4.566 13.740,4.344 C14.280,5.331 14.587,6.462 14.587,7.666 C14.587,10.220 13.204,12.449 11.147,13.648 L13.261,7.536 ZM11.768,5.407 C12.031,5.868 12.339,6.461 12.339,7.316 C12.339,7.909 12.163,8.654 11.812,9.554 L11.122,11.860 L8.620,4.421 C9.038,4.397 9.412,4.355 9.412,4.355 C9.785,4.310 9.740,3.763 9.368,3.784 C9.368,3.784 8.247,3.872 7.523,3.872 C6.843,3.872 5.701,3.784 5.701,3.784 C5.327,3.763 5.284,4.333 5.656,4.355 C5.656,4.355 6.010,4.397 6.383,4.421 L7.460,7.376 L5.946,11.918 L3.425,4.421 C3.842,4.397 4.218,4.355 4.218,4.355 C4.591,4.310 4.545,3.763 4.173,3.784 C4.173,3.784 3.053,3.872 2.328,3.872 C2.198,3.872 2.046,3.869 1.883,3.864 C3.121,1.985 5.249,0.744 7.666,0.744 C9.469,0.744 11.109,1.433 12.340,2.562 C12.311,2.559 12.281,2.556 12.251,2.556 C11.570,2.556 11.089,3.148 11.089,3.784 C11.089,4.355 11.418,4.838 11.768,5.407 Z" />
+                                    </svg>
+
+                                    Plugin
+                                </a>
+                            </div>
+
+                            <p class="featured-item__descr">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+                                mattis,
+                                leo quam aliquet congue
+                                placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
+                                leo
+                                quam aliquet congue justo
+                                ut scelerisque.
+                            </p>
+                            <a href="#" class="product__tag-btn featured-item__tag-btn ">website</a>
+                            <a href="#" class="product__tag-btn featured-item__tag-btn ">plugin</a>
+                            <a href="#" class="product__tag-btn featured-item__tag-btn ">landing page</a>
+                            <div class="product__bottom featured-item__bottom">
+                                <div class="product__price featured-item__price">$10 - $50</div>
+
+                                <button class="product__favourites">
+                                    <span class="lnr lnr-heart product__heart"></span>
+                                    46
+                                </button>
+
+                                <button class="product__sales">
+                                    <span class="lnr lnr-cart product__cart"></span>
+                                    634
+                                </button>
+                                <div class="featured-item__stars">
+                                    <div class="rate-stars"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="featured-item">
+                        <div class="featured-item__img-block">
+                            <img class="featured-item__img" src="images/feature-prod-1.jpg" alt="">
+                            <div class="featured-item__img--hover product__img--hover">
+                                <a href="#" class="product__img-btn">More Info</a>
+                                <a href="#" class="product__img-btn">Live Demo</a>
+                            </div>
+                        </div>
+
+                        <div class="featured-item__info">
+                            <a href="#" class="product__title featured-item__title">One Page Resume Template</a>
+
+                            <div class="product__author featured-item__author">
+                                <div class="product__author-avat featured-item__author-avat"></div>
+                                <div class="product__author-name featured-item__author-name">AazzTech</div>
+                                <a href="#" class="product-tag">
+                                    <!-- <svg class="product-tag-icon wordpress-icon" width="16px"
+                                                                        height="16px">Wordpress</svg> -->
+                                    <svg class="product-tag-icon" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px">
+                                        <path fill-rule="evenodd" fill="rgb(115, 71, 193)"
+                                            d="M0.166,7.666 C0.166,11.808 3.524,15.166 7.666,15.166 C11.808,15.166 15.166,11.808 15.166,7.666 C15.166,3.524 11.808,0.165 7.666,0.165 C3.524,0.165 0.166,3.524 0.166,7.666 ZM0.744,7.666 C0.744,6.662 0.960,5.710 1.344,4.849 L4.646,13.895 C2.337,12.773 0.744,10.405 0.744,7.666 ZM7.666,14.587 C6.987,14.587 6.331,14.488 5.711,14.306 L7.788,8.272 L9.916,14.101 C9.930,14.135 9.947,14.165 9.965,14.195 C9.246,14.449 8.472,14.587 7.666,14.587 ZM13.261,7.536 C13.655,6.548 13.788,5.759 13.788,5.056 C13.788,4.802 13.770,4.566 13.740,4.344 C14.280,5.331 14.587,6.462 14.587,7.666 C14.587,10.220 13.204,12.449 11.147,13.648 L13.261,7.536 ZM11.768,5.407 C12.031,5.868 12.339,6.461 12.339,7.316 C12.339,7.909 12.163,8.654 11.812,9.554 L11.122,11.860 L8.620,4.421 C9.038,4.397 9.412,4.355 9.412,4.355 C9.785,4.310 9.740,3.763 9.368,3.784 C9.368,3.784 8.247,3.872 7.523,3.872 C6.843,3.872 5.701,3.784 5.701,3.784 C5.327,3.763 5.284,4.333 5.656,4.355 C5.656,4.355 6.010,4.397 6.383,4.421 L7.460,7.376 L5.946,11.918 L3.425,4.421 C3.842,4.397 4.218,4.355 4.218,4.355 C4.591,4.310 4.545,3.763 4.173,3.784 C4.173,3.784 3.053,3.872 2.328,3.872 C2.198,3.872 2.046,3.869 1.883,3.864 C3.121,1.985 5.249,0.744 7.666,0.744 C9.469,0.744 11.109,1.433 12.340,2.562 C12.311,2.559 12.281,2.556 12.251,2.556 C11.570,2.556 11.089,3.148 11.089,3.784 C11.089,4.355 11.418,4.838 11.768,5.407 Z" />
+                                    </svg>
+
+                                    Wordpress
+                                </a>
+                            </div>
+
+                            <p class="featured-item__descr">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+                                mattis,
+                                leo quam aliquet congue
+                                placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
+                                leo
+                                quam aliquet congue justo
+                                ut scelerisque.
+                            </p>
+                            <a href="#" class="product__tag-btn featured-item__tag-btn ">website</a>
+                            <a href="#" class="product__tag-btn featured-item__tag-btn ">plugin</a>
+                            <a href="#" class="product__tag-btn featured-item__tag-btn ">landing page</a>
+                            <div class="product__bottom featured-item__bottom">
+                                <div class="product__price featured-item__price">$10 - $50</div>
 
                                 <button class="product__favourites">
                                     <span class="lnr lnr-heart product__heart"></span>
@@ -327,31 +535,18 @@
                                     634
                                 </button>
 
-                                <div class="rating">
-                                    <div class="rating__star"></div>
-                                    <div class="rating__star"></div>
-                                    <div class="rating__star"></div>
-                                    <div class="rating__star"></div>
-                                    <div class="rating__star--half"></div>
+                                <div class="featured-item__stars">
+                                    <div class="rate-stars"></div>
                                 </div>
                             </div>
 
                         </div>
                     </div>
 
-
                 </div>
             </div>
             </div>
         </section>
-
-
-
-
-
-
-
-
 
         <section class="new-release">
             <div class="container">
@@ -360,156 +555,803 @@
                 <div class="new-release__filter"></div>
 
                 <div class="new-release__tags">
-                    <a href class="new-release__tag product__tag">Plugins</a>
-                    <a href class="new-release__tag product__tag">WordPress</a>
-                    <a href class="new-release__tag product__tag">Site Template</a>
-                    <a href class="new-release__tag product__tag">PSD Template</a>
-                    <a href class="new-release__tag product__tag">Joomla</a>
-                    <a href class="new-release__tag product__tag">User Interface</a>
-                    <a href class="new-release__tag product__tag">Landing Page</a>
-                    <a href class="new-release__tag product__tag">Software</a>
+                    <button class="product__tag-btn tag-btn--states" data-filter=".tag-wordpress">WordPress</button>
+                    <button class="product__tag-btn tag-btn--states" data-filter=".tag-site-template">Site
+                        Template</button>
+                    <button class="product__tag-btn tag-btn--states" data-filter=".tag-plugin">Plugins</button>
+                    <button class="product__tag-btn tag-btn--states" data-filter=".tag-psd-template">PSD
+                        Template</button>
+                    <button class="product__tag-btn tag-btn--states" data-filter=".tag-joomla">Joomla</button>
+                    <button class="product__tag-btn tag-btn--states" data-filter=".tag-user-interface">User
+                        Interface</button>
+                    <button class="product__tag-btn tag-btn--states" data-filter=".tag-landing-page">Landing
+                        Page</button>
+                    <button class="product__tag-btn tag-btn--states" data-filter=".tag-sofrware">Software</button>
                 </div>
+                <div class="new-release__catalogue">
 
-
-
-
-                <div class="new-release__catalogue catalouge">
-
-                    <div class="product new-product ">
+                    <!-- 1 -->
+                    <div class="product new-product mix tag-plugin tag-wordpress tag-user-interface tag-all"
+                        data-order="1">
                         <div class="new-product__img-block ">
-                            <img class="new-product__img" src="images/bg-pr.jpg" alt="">
+                            <img class="new-product__img" src="images/bg-pr-6.jpg" alt="">
                             <div class="product__img--hover new-product__img--hover ">
                                 <a href="#" class="product__img-btn">More Info</a>
                                 <a href="#" class="product__img-btn">Live Demo</a>
                             </div>
                         </div>
 
-                        <div class="product__info new-product__info">
-                            <div class="new-product__title">E-commerce Shopping Cart</div>
-                            <a href="#" class=" product__author">
-                                <a href="" class="product__author-link new-product__author-link">
-                                    <!-- <img class="product__author-img new-product__author-img" src="images/account.png" -->
-                                    class="author-avat">
-                                    <div class="author__name new-product__author-name">AazzTech</div>
+                        <div class="new-product__info">
+                            <a href="#" class="product__title new-product__title">E-commerce Shopping Cart</a>
+
+                            <div class="product__author new-product__author">
+                                <a href="#" href="" class="product__author-link new-product__author-link">
+                                    <img class="product__author-avat new-product__author-avat" src="images/account.png">
+                                    <span class="product__author-name new-product__author-name">Theme-Valley</span>
                                 </a>
-                                <div class="wordpress">WordPress</div>
-                        </div>
+                                <a href="#" class="product-tag">
+                                    <!-- <svg class="product-tag-icon wordpress-icon" width="16px"
+                                        height="16px">Wordpress</svg> -->
+                                    <svg class="product-tag-icon" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px">
+                                        <path fill-rule="evenodd" fill="rgb(115, 71, 193)"
+                                            d="M0.166,7.666 C0.166,11.808 3.524,15.166 7.666,15.166 C11.808,15.166 15.166,11.808 15.166,7.666 C15.166,3.524 11.808,0.165 7.666,0.165 C3.524,0.165 0.166,3.524 0.166,7.666 ZM0.744,7.666 C0.744,6.662 0.960,5.710 1.344,4.849 L4.646,13.895 C2.337,12.773 0.744,10.405 0.744,7.666 ZM7.666,14.587 C6.987,14.587 6.331,14.488 5.711,14.306 L7.788,8.272 L9.916,14.101 C9.930,14.135 9.947,14.165 9.965,14.195 C9.246,14.449 8.472,14.587 7.666,14.587 ZM13.261,7.536 C13.655,6.548 13.788,5.759 13.788,5.056 C13.788,4.802 13.770,4.566 13.740,4.344 C14.280,5.331 14.587,6.462 14.587,7.666 C14.587,10.220 13.204,12.449 11.147,13.648 L13.261,7.536 ZM11.768,5.407 C12.031,5.868 12.339,6.461 12.339,7.316 C12.339,7.909 12.163,8.654 11.812,9.554 L11.122,11.860 L8.620,4.421 C9.038,4.397 9.412,4.355 9.412,4.355 C9.785,4.310 9.740,3.763 9.368,3.784 C9.368,3.784 8.247,3.872 7.523,3.872 C6.843,3.872 5.701,3.784 5.701,3.784 C5.327,3.763 5.284,4.333 5.656,4.355 C5.656,4.355 6.010,4.397 6.383,4.421 L7.460,7.376 L5.946,11.918 L3.425,4.421 C3.842,4.397 4.218,4.355 4.218,4.355 C4.591,4.310 4.545,3.763 4.173,3.784 C4.173,3.784 3.053,3.872 2.328,3.872 C2.198,3.872 2.046,3.869 1.883,3.864 C3.121,1.985 5.249,0.744 7.666,0.744 C9.469,0.744 11.109,1.433 12.340,2.562 C12.311,2.559 12.281,2.556 12.251,2.556 C11.570,2.556 11.089,3.148 11.089,3.784 C11.089,4.355 11.418,4.838 11.768,5.407 Z" />
+                                    </svg>
+                                    Plugin
+                                </a>
+                            </div>
 
-                        <div class="new-product__descr">
-                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                            the mattis, leo quam aliquet congue.
-                        </div>
+                            <div class="product__descr new-product__descr">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                the mattis, leo quam aliquet congue.
+                            </div>
 
-                        <div class="new-product__bottom">
-                            <div class="new-product__price">$20</div>
+                            <div class="product__bottom new-product__bottom">
+                                <div class="product__price new-product__price">$20</div>
 
-                            <button class="product__favourites">
-                                <span class="lnr lnr-heart product__heart"></span>
-                                46
-                            </button>
+                                <button class="product__favourites new-product__favourites">
+                                    <span class="lnr lnr-heart product__heart"></span>
+                                    46
+                                </button>
 
-                            <button class="product__sales">
-                                <span class="lnr lnr-cart productm__cart"></span>
-                                634
-                            </button>
+                                <button class="product__sales new-product__sales">
+                                    <span class="lnr lnr-cart productm__cart"></span>
+                                    634
+                                </button>
+                            </div>
                         </div>
                     </div>
+                    <!-- 1 -->
+
+                    <!-- 2 -->
+                    <div class="new-product product mix tag-user-interface tag-landing-page tag-all" data-order="2">
+                        <div class="new-product__img-block ">
+                            <img class="new-product__img" src="images/bg-pr.jpg" alt="">
+                            <div class="new-product__img--hover product__img--hover">
+                                <a href="#" class="product__img-btn">More Info</a>
+                                <a href="#" class="product__img-btn">Live Demo</a>
+                            </div>
+                        </div>
+
+                        <div class="product__info new-product__info">
+                            <a href="#" class="product__title new-product__title">Marketify Coffee Shop</a>
+
+                            <div class="product__author new-product__author">
+                                <a href="#" class="product__author-link new-product__author-link">
+                                    <img class="product__author-avat new-product__author-avat" src="images/account.png">
+                                    <span class="product__author-name new-product__author-name">TEchoTheme</span>
+                                </a>
+                                <a href="#" class="product-tag">
+                                    <!-- <svg class="product-tag-icon psd-icon" width="16px"
+                                        height="16px">PSD</svg> -->
 
 
+                                    <svg class="product-tag-icon" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="13px" height="17px">
+                                        <path fill-rule="evenodd" fill="rgb(115, 71, 193)"
+                                            d="M11.182,16.999 L1.818,16.999 C0.816,16.999 -0.000,16.188 -0.000,15.189 L-0.000,1.808 C-0.000,0.811 0.816,-0.001 1.818,-0.001 L8.681,-0.001 L13.000,4.281 L13.000,15.189 C13.000,16.188 12.184,16.999 11.182,16.999 ZM11.859,4.720 L9.525,4.727 C8.829,4.727 8.264,4.164 8.264,3.472 L8.264,1.102 L1.818,1.108 C1.430,1.108 1.114,1.422 1.114,1.808 L1.114,15.189 C1.114,15.577 1.430,15.891 1.818,15.891 L11.182,15.891 C11.570,15.891 11.885,15.577 11.886,15.189 L11.859,4.720 ZM9.020,8.900 C9.836,9.200 10.220,9.622 10.220,10.271 C10.220,11.043 9.623,11.698 8.354,11.698 C7.826,11.698 7.305,11.561 7.044,11.418 L7.257,10.558 C7.538,10.702 7.970,10.845 8.416,10.845 C8.896,10.845 9.150,10.646 9.150,10.346 C9.150,10.059 8.931,9.896 8.375,9.697 C7.607,9.431 7.106,9.008 7.106,8.340 C7.106,7.555 7.765,6.954 8.855,6.954 C9.376,6.954 9.760,7.064 10.035,7.187 L9.802,8.026 C9.616,7.937 9.287,7.808 8.834,7.808 C8.382,7.808 8.162,8.012 8.162,8.251 C8.162,8.544 8.423,8.674 9.020,8.900 ZM4.627,10.005 C4.490,10.005 4.367,9.998 4.271,9.985 L4.271,11.629 L3.235,11.629 L3.235,7.091 C3.558,7.036 4.010,6.995 4.648,6.995 C5.293,6.995 5.752,7.118 6.061,7.363 C6.356,7.596 6.555,7.978 6.555,8.429 C6.555,8.879 6.404,9.261 6.130,9.521 C5.773,9.855 5.245,10.005 4.627,10.005 ZM4.703,7.780 C4.490,7.780 4.346,7.800 4.271,7.821 L4.271,9.179 C4.360,9.200 4.470,9.206 4.621,9.206 C5.176,9.206 5.519,8.927 5.519,8.456 C5.519,8.033 5.224,7.780 4.703,7.780 Z" />
+                                    </svg>
 
+                                    PSD
+                                </a>
+                            </div>
+                            <div class="product__descr new-product__descr ">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                the mattis, leo quam aliquet congue.
+                            </div>
 
+                            <div class="product__bottom new-product__bottom">
+                                <div class="product__price new-product__price">$20</div>
 
+                                <button class="product__favourites new-product__favourites">
+                                    <span class="lnr lnr-heart product__heart"></span>
+                                    46
+                                </button>
 
+                                <button class="product__sales new-product__sales">
+                                    <span class="lnr lnr-cart productm__cart"></span>
+                                    634
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2 -->
 
-<div class="new-product product">
-    <div class="new-product__img-block ">
-        <img class="new-product__img" src="images/bg-pr.jpg" alt="">
-        <div class="new-product__img--hover product__img--hover">
-            <a href="#" class="product__img-btn">More Info</a>
-            <a href="#" class="product__img-btn">Live Demo</a>
-        </div>
-    </div>
+                    <!-- 3 -->
+                    <div class="new-product product mix tag-site-template tag-landing-page tag-plugin tag-all"
+                        data-order="3">
+                        <div class="new-product__img-block ">
+                            <img class="new-product__img" src="images/bg-pr-5.jpg" alt="">
+                            <div class="new-product__img--hover product__img--hover">
+                                <a href="#" class="product__img-btn">More Info</a>
+                                <a href="#" class="product__img-btn">Live Demo</a>
+                            </div>
+                        </div>
 
-    <div class="product__info new-product__info">
-        <div class="new-product__title"></div>
-        <a href="#" class=" product__author">
-            <a href="" class="product__author-link new-product__author-link">
-                <!-- <img class="product__author-img new-product__author-img" src="images/account.png" -->
-                class="author-avat">
-                <div class="author__name new-product__author-name">AazzTech</div>
-            </a>
-            <div class="wordpress">WordPress</div>
-    </div>
+                        <div class="product__descr new-product__info">
+                            <a href="#" class="product__title new-product__title">Bryson - Portfolio Template</a>
 
-    <div class="new-product__descr">
-        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-        the mattis, leo quam aliquet congue.
-    </div>
+                            <div class="product__author new-product__author">
+                                <a href="#" class="product__author-link new-product__author-link">
+                                    <img class="product__author-avat new-product__author-avat" src="images/account.png">
+                                    <span class="product__author-name new-product__author-name">Artcorner</span>
+                                </a>
+                                <a href="#" class="product-tag">
+                                    <!-- <svg class="product-tag-icon html-icon" width="16px" height="16px">HTML</svg> -->
+                                    <svg class="product-tag-icon" version="1.1" id="Layer_1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" width="15px" height="17px" viewBox="0 0 15 17"
+                                        enable-background="new 0 0 15 17" xml:space="preserve">
+                                        <image id="image0" width="15" height="17" x="0" y="0" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAARCAMAAAA11AaTAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+                                    AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABC1BMVEX///9zR8FzR8FzR8Fz
+                                    R8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8Fz
+                                    R8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8Fz
+                                    R8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8Fz
+                                    R8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8Fz
+                                    R8FzR8FzR8FzR8FzR8FzR8FzR8FzR8H///+xSNXvAAAAV3RSTlMA2/Ll0f3+0r/EEiEREA2+wq3J
+                                    Asawmd0J+Z2G7uH3iXMbAR37dl94VjcmKSMlY0zMq+jYLlA6S6PIRT0fgLmMKCwX+qAI67RXGVWz
+                                    C9bZest8ImnDahrA9kY8AAAAAWJLR0QAiAUdSAAAAAd0SU1FB+QJHAMoNsZ//AgAAADCSURBVBjT
+                                    TY/XUsIAEEUvJUEkFBUVEKRZQQGxU0SNhaKioJz//xMSwoycp70z5+7Oyof/H3wKsEpAQQxzGUyD
+                                    kNYIr0esqGVZMcVJaINNaUsLkmxrh12l0p5vktEeWSlH2mHfIK8CRnEhl1Q+4FBHcHxyWq5Uz3QO
+                                    NdWhcdF02pe6gmvdwK3unHyvFrRVdaVO96H36Faf9Gzz4l1Xxl39+gb2e38wHNmQ/ZA+V975cqzI
+                                    +HuZGj8TrziY/trhv5k7zgGlvS7tcjayVAAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMC0wOS0yOFQw
+                                    Mzo0MDo1NCswMzowMNb5bnIAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjAtMDktMjhUMDM6NDA6NTQr
+                                    MDM6MDCnpNbOAAAAAElFTkSuQmCC" />
+                                    </svg>
+                                    HTML
+                                </a>
+                            </div>
 
-    <div class="new-product__bottom">
-        <div class="new-product__price">$20</div>
+                            <div class="product__descr new-product__descr ">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                the mattis, leo quam aliquet congue.
+                            </div>
 
-        <button class="product__favourites">
-            <span class="lnr lnr-heart product__heart"></span>
-            46
-        </button>
+                            <div class="product__bottom new-product__bottom">
+                                <div class="product__price new-product__price">$20</div>
 
-        <button class="product__sales">
-            <span class="lnr lnr-cart productm__cart"></span>
-            634
-        </button>
-    </div>
-</div>
-<div class="new-product product">
-    <div class="new-product__img-block ">
-        <img class="new-product__img" src="images/bg-pr.jpg" alt="">
-        <div class="new-product__img--hover product__img--hover">
-            <a href="#" class="product__img-btn">More Info</a>
-            <a href="#" class="product__img-btn">Live Demo</a>
-        </div>
-    </div>
+                                <button class="product__favourites new-product__favourites">
+                                    <span class="lnr lnr-heart product__heart"></span>
+                                    46
+                                </button>
 
-    <div class="product__info new-product__info">
-        <div class="new-product__title"></div>
-        <a href="#" class=" product__author">
-            <a href="" class="product__author-link new-product__author-link">
-                <!-- <img class="product__author-img new-product__author-img" src="images/account.png" -->
-                class="author-avat">
-                <div class="author__name new-product__author-name">AazzTech</div>
-            </a>
-            <div class="wordpress">WordPress</div>
-    </div>
+                                <button class="product__sales new-product__sales">
+                                    <span class="lnr lnr-cart productm__cart"></span>
+                                    634
+                                </button>
+                                <!-- <div class="new-product__stars">
+                                    <div class="rate-stars"></div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3 -->
 
-    <div class="new-product__descr">
-        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-        the mattis, leo quam aliquet congue.
-    </div>
+                    <!-- 4 -->
+                    <div class="product new-product mix tag-plugin tag-wordpress tag-psd-template tag-all"
+                        data-order="4">
+                        <div class="new-product__img-block ">
+                            <img class="new-product__img" src="images/bg-pr-5.jpg" alt="">
+                            <div class="product__img--hover new-product__img--hover ">
+                                <a href="#" class="product__img-btn">More Info</a>
+                                <a href="#" class="product__img-btn">Live Demo</a>
+                            </div>
+                        </div>
 
-    <div class="new-product__bottom">
-        <div class="new-product__price">$20</div>
+                        <div class="new-product__info">
+                            <a href="#" class="product__title new-product__title">E-commerce Shopping Cart</a>
 
-        <button class="product__favourites">
-            <span class="lnr lnr-heart product__heart"></span>
-            46
-        </button>
+                            <div class="product__author new-product__author">
+                                <a href="#" class="product__author-link new-product__author-link">
+                                    <img class="product__author-avat new-product__author-avat" src="images/account.png">
+                                    <span class="product__author-name new-product__author-name">Design-Hub</span>
+                                </a>
+                                <a href="#" class="product-tag">
+                                    <!-- <svg class="product-tag-icon wordpress-icon" width="16px" height="16px">Wordpress</svg> -->
+                                    <svg class="product-tag-icon" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px">
+                                        <path fill-rule="evenodd" fill="rgb(115, 71, 193)"
+                                            d="M0.166,7.666 C0.166,11.808 3.524,15.166 7.666,15.166 C11.808,15.166 15.166,11.808 15.166,7.666 C15.166,3.524 11.808,0.165 7.666,0.165 C3.524,0.165 0.166,3.524 0.166,7.666 ZM0.744,7.666 C0.744,6.662 0.960,5.710 1.344,4.849 L4.646,13.895 C2.337,12.773 0.744,10.405 0.744,7.666 ZM7.666,14.587 C6.987,14.587 6.331,14.488 5.711,14.306 L7.788,8.272 L9.916,14.101 C9.930,14.135 9.947,14.165 9.965,14.195 C9.246,14.449 8.472,14.587 7.666,14.587 ZM13.261,7.536 C13.655,6.548 13.788,5.759 13.788,5.056 C13.788,4.802 13.770,4.566 13.740,4.344 C14.280,5.331 14.587,6.462 14.587,7.666 C14.587,10.220 13.204,12.449 11.147,13.648 L13.261,7.536 ZM11.768,5.407 C12.031,5.868 12.339,6.461 12.339,7.316 C12.339,7.909 12.163,8.654 11.812,9.554 L11.122,11.860 L8.620,4.421 C9.038,4.397 9.412,4.355 9.412,4.355 C9.785,4.310 9.740,3.763 9.368,3.784 C9.368,3.784 8.247,3.872 7.523,3.872 C6.843,3.872 5.701,3.784 5.701,3.784 C5.327,3.763 5.284,4.333 5.656,4.355 C5.656,4.355 6.010,4.397 6.383,4.421 L7.460,7.376 L5.946,11.918 L3.425,4.421 C3.842,4.397 4.218,4.355 4.218,4.355 C4.591,4.310 4.545,3.763 4.173,3.784 C4.173,3.784 3.053,3.872 2.328,3.872 C2.198,3.872 2.046,3.869 1.883,3.864 C3.121,1.985 5.249,0.744 7.666,0.744 C9.469,0.744 11.109,1.433 12.340,2.562 C12.311,2.559 12.281,2.556 12.251,2.556 C11.570,2.556 11.089,3.148 11.089,3.784 C11.089,4.355 11.418,4.838 11.768,5.407 Z" />
+                                    </svg>
+                                    Plugin
+                                </a>
+                            </div>
 
-        <button class="product__sales">
-            <span class="lnr lnr-cart productm__cart"></span>
-            634
-        </button>
-    </div>
-</div>
+                            <div class="product__descr new-product__descr">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                the mattis, leo quam aliquet congue.
+                            </div>
 
+                            <div class="product__bottom new-product__bottom">
+                                <div class="product__price new-product__price">$10-50</div>
 
+                                <button class="product__favourites new-product__favourites">
+                                    <span class="lnr lnr-heart product__heart"></span>
+                                    90
+                                </button>
+
+                                <button class="product__sales new-product__sales">
+                                    <span class="lnr lnr-cart productm__cart"></span>
+                                    45
+                                </button>
+                                <!-- <div class="new-product__stars">
+                                <div class="rate-stars"></div>
+                            </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 4 -->
+
+                    <!-- 5 -->
+                    <div class="new-product product mix tag-user-interface tag-psd-template tag-all" data-order="5">
+                        <div class="new-product__img-block ">
+                            <img class="new-product__img" src="images/bg-pr.jpg" alt="">
+                            <div class="new-product__img--hover product__img--hover">
+                                <a href="#" class="product__img-btn">More Info</a>
+                                <a href="#" class="product__img-btn">Live Demo</a>
+                            </div>
+                        </div>
+
+                        <div class="product__info new-product__info">
+                            <a href="#" class="product__title new-product__title">Marketify Coffee Shop</a>
+
+                            <div class="product__author new-product__author">
+                                <a href="#" class="product__author-link new-product__author-link">
+                                    <img class="product__author-avat new-product__author-avat" src="images/account.png">
+                                    <span class="product__author-name new-product__author-name">AazzTech</span>
+                                </a>
+
+                                <a href="#" class="product-tag">
+                                    <!-- <svg class="product-tag-icon psd-icon" width="16px" height="16px">PSD</svg> -->
+                                    <svg class="product-tag-icon" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="13px" height="17px">
+                                        <path fill-rule="evenodd" fill="rgb(115, 71, 193)"
+                                            d="M11.182,16.999 L1.818,16.999 C0.816,16.999 -0.000,16.188 -0.000,15.189 L-0.000,1.808 C-0.000,0.811 0.816,-0.001 1.818,-0.001 L8.681,-0.001 L13.000,4.281 L13.000,15.189 C13.000,16.188 12.184,16.999 11.182,16.999 ZM11.859,4.720 L9.525,4.727 C8.829,4.727 8.264,4.164 8.264,3.472 L8.264,1.102 L1.818,1.108 C1.430,1.108 1.114,1.422 1.114,1.808 L1.114,15.189 C1.114,15.577 1.430,15.891 1.818,15.891 L11.182,15.891 C11.570,15.891 11.885,15.577 11.886,15.189 L11.859,4.720 ZM9.020,8.900 C9.836,9.200 10.220,9.622 10.220,10.271 C10.220,11.043 9.623,11.698 8.354,11.698 C7.826,11.698 7.305,11.561 7.044,11.418 L7.257,10.558 C7.538,10.702 7.970,10.845 8.416,10.845 C8.896,10.845 9.150,10.646 9.150,10.346 C9.150,10.059 8.931,9.896 8.375,9.697 C7.607,9.431 7.106,9.008 7.106,8.340 C7.106,7.555 7.765,6.954 8.855,6.954 C9.376,6.954 9.760,7.064 10.035,7.187 L9.802,8.026 C9.616,7.937 9.287,7.808 8.834,7.808 C8.382,7.808 8.162,8.012 8.162,8.251 C8.162,8.544 8.423,8.674 9.020,8.900 ZM4.627,10.005 C4.490,10.005 4.367,9.998 4.271,9.985 L4.271,11.629 L3.235,11.629 L3.235,7.091 C3.558,7.036 4.010,6.995 4.648,6.995 C5.293,6.995 5.752,7.118 6.061,7.363 C6.356,7.596 6.555,7.978 6.555,8.429 C6.555,8.879 6.404,9.261 6.130,9.521 C5.773,9.855 5.245,10.005 4.627,10.005 ZM4.703,7.780 C4.490,7.780 4.346,7.800 4.271,7.821 L4.271,9.179 C4.360,9.200 4.470,9.206 4.621,9.206 C5.176,9.206 5.519,8.927 5.519,8.456 C5.519,8.033 5.224,7.780 4.703,7.780 Z" />
+                                    </svg>
+
+                                    PSD
+                                </a>
+                            </div>
+                            <div class="product__descr new-product__descr ">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                the mattis, leo quam aliquet congue.
+                            </div>
+
+                            <div class="product__bottom new-product__bottom">
+                                <div class="product__price new-product__price">$10</div>
+
+                                <button class="product__favourites new-product__favourites">
+                                    <span class="lnr lnr-heart product__heart"></span>
+                                    48
+                                </button>
+
+                                <button class="product__sales new-product__sales">
+                                    <span class="lnr lnr-cart productm__cart"></span>
+                                    50
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 5 -->
+
+                    <!-- 6 -->
+                    <div class="new-product product mix tag-user-interface tag-all" data-order="6">
+                        <div class="new-product__img-block ">
+                            <img class="new-product__img" src="images/bg-pr-5.jpg" alt="">
+                            <div class="new-product__img--hover product__img--hover">
+                                <a href="#" class="product__img-btn">More Info</a>
+                                <a href="#" class="product__img-btn">Live Demo</a>
+                            </div>
+                        </div>
+
+                        <div class="product__descr new-product__info">
+                            <a href="#" class="product__title new-product__title">Bryson - Portfolio Template</a>
+
+                            <div class="product__author new-product__author">
+                                <a href="#" class="product__author-link new-product__author-link">
+                                    <img class="product__author-avat new-product__author-avat" src="images/account.png">
+                                    <span class="product__author-name new-product__author-name">Coder-Lab</span>
+                                </a>
+                                <a href="#" class="product-tag">
+                                    <!-- <svg class="product-tag-icon html-icon" width="16px"
+                                          height="16px">HTML</svg> -->
+                                    <svg class="product-tag-icon" version="1.1" id="Layer_1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" width="15px" height="17px" viewBox="0 0 15 17"
+                                        enable-background="new 0 0 15 17" xml:space="preserve">
+                                        <image id="image0" width="15" height="17" x="0" y="0" xlink:href="data:image/png;base64,iVBORw0KGgoAAA
+                                        ANSUhEUgAAAA8AAAARCAMAAAA11AaTAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+                                                                        AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABC1BMVEX///9zR8FzR8FzR8Fz
+                                                                        R8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8Fz
+                                                                        R8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8Fz
+                                                                        R8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8Fz
+                                                                        R8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8Fz
+                                                                        R8FzR8FzR8FzR8FzR8FzR8FzR8FzR8H///+xSNXvAAAAV3RSTlMA2/Ll0f3+0r/EEiEREA2+wq3J
+                                                                        Asawmd0J+Z2G7uH3iXMbAR37dl94VjcmKSMlY0zMq+jYLlA6S6PIRT0fgLmMKCwX+qAI67RXGVWz
+                                                                        C9bZest8ImnDahrA9kY8AAAAAWJLR0QAiAUdSAAAAAd0SU1FB+QJHAMoNsZ//AgAAADCSURBVBjT
+                                                                        TY/XUsIAEEUvJUEkFBUVEKRZQQGxU0SNhaKioJz//xMSwoycp70z5+7Oyof/H3wKsEpAQQxzGUyD
+                                                                        kNYIr0esqGVZMcVJaINNaUsLkmxrh12l0p5vktEeWSlH2mHfIK8CRnEhl1Q+4FBHcHxyWq5Uz3QO
+                                                                        NdWhcdF02pe6gmvdwK3unHyvFrRVdaVO96H36Faf9Gzz4l1Xxl39+gb2e38wHNmQ/ZA+V975cqzI
+                                                                        +HuZGj8TrziY/trhv5k7zgGlvS7tcjayVAAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMC0wOS0yOFQw
+                                                                        Mzo0MDo1NCswMzowMNb5bnIAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjAtMDktMjhUMDM6NDA6NTQr
+                                        MDM6MDCnpNbOAAAAAElFTkSuQmCC" />
+                                    </svg>
+                                    HTML
+                                </a>
+                            </div>
+
+                            <div class="product__descr new-product__descr ">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                the mattis, leo quam aliquet congue.
+                            </div>
+
+                            <div class="product__bottom new-product__bottom">
+                                <div class="product__price new-product__price">$10</div>
+
+                                <button class="product__favourites new-product__favourites">
+                                    <span class="lnr lnr-heart product__heart"></span>
+                                    46
+                                </button>
+
+                                <button class="product__sales new-product__sales">
+                                    <span class="lnr lnr-cart productm__cart"></span>
+                                    69
+                                </button>
+                                <!-- <div class="new-product__stars">
+                                    <div class="rate-stars"></div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 6 -->
 
                 </div>
+                <button type="button" data-filter=".tag-all" class="new-release__all-prod-btn">All New Products</button>
+
             </div>
         </section>
 
 
-        <!-- E-commerce Shopping Cart 
-        Marketify Coffee Shop
-    Bryson - Portfolio Template-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 11 -->
+
+        <section class="follower-feed">
+            <div class="container">
+
+                <div class="follower-feed__title products-section-title">
+                    Your Followers Feed
+                </div>
+
+                <div class="follower-feed__catalogue">
+
+                    <!-- 1 -->
+                    <div class="feed-product product">
+                        <div class="feed-product__img-block ">
+                            <img class="feed-product__img" src="images/bg-pr-2.jpg" alt="">
+                            <div class="product__img--hover feed-product__img--hover ">
+                                <a href="#" class="product__img-btn">More Info</a>
+                                <a href="#" class="product__img-btn">Live Demo</a>
+                            </div>
+                        </div>
+
+                        <div class="feed-product__info">
+                            <a href="#" class="product__title feed-product__title">E-commerce Shopping Cart</a>
+
+                            <div class="product__author feed-product__author">
+                                <a href="#" href="" class="product__author-link feed-product__author-link">
+                                    <img class="product__author-avat feed-product__author-avat"
+                                        src="images/account.png">
+                                    <span class="product__author-name feed-product__author-name">Theme-Valley</span>
+                                </a>
+                                <a href="#" class="product-tag">
+                                    <!-- <svg class="product-tag-icon wordpress-icon" width="16px"
+                                        height="16px">Wordpress</svg> -->
+                                    <svg class="product-tag-icon" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px">
+                                        <path fill-rule="evenodd" fill="rgb(115, 71, 193)"
+                                            d="M0.166,7.666 C0.166,11.808 3.524,15.166 7.666,15.166 C11.808,15.166 15.166,11.808 15.166,7.666 C15.166,3.524 11.808,0.165 7.666,0.165 C3.524,0.165 0.166,3.524 0.166,7.666 ZM0.744,7.666 C0.744,6.662 0.960,5.710 1.344,4.849 L4.646,13.895 C2.337,12.773 0.744,10.405 0.744,7.666 ZM7.666,14.587 C6.987,14.587 6.331,14.488 5.711,14.306 L7.788,8.272 L9.916,14.101 C9.930,14.135 9.947,14.165 9.965,14.195 C9.246,14.449 8.472,14.587 7.666,14.587 ZM13.261,7.536 C13.655,6.548 13.788,5.759 13.788,5.056 C13.788,4.802 13.770,4.566 13.740,4.344 C14.280,5.331 14.587,6.462 14.587,7.666 C14.587,10.220 13.204,12.449 11.147,13.648 L13.261,7.536 ZM11.768,5.407 C12.031,5.868 12.339,6.461 12.339,7.316 C12.339,7.909 12.163,8.654 11.812,9.554 L11.122,11.860 L8.620,4.421 C9.038,4.397 9.412,4.355 9.412,4.355 C9.785,4.310 9.740,3.763 9.368,3.784 C9.368,3.784 8.247,3.872 7.523,3.872 C6.843,3.872 5.701,3.784 5.701,3.784 C5.327,3.763 5.284,4.333 5.656,4.355 C5.656,4.355 6.010,4.397 6.383,4.421 L7.460,7.376 L5.946,11.918 L3.425,4.421 C3.842,4.397 4.218,4.355 4.218,4.355 C4.591,4.310 4.545,3.763 4.173,3.784 C4.173,3.784 3.053,3.872 2.328,3.872 C2.198,3.872 2.046,3.869 1.883,3.864 C3.121,1.985 5.249,0.744 7.666,0.744 C9.469,0.744 11.109,1.433 12.340,2.562 C12.311,2.559 12.281,2.556 12.251,2.556 C11.570,2.556 11.089,3.148 11.089,3.784 C11.089,4.355 11.418,4.838 11.768,5.407 Z" />
+                                    </svg>
+                                    Plugin
+                                </a>
+                            </div>
+
+                            <div class="product__descr feed-product__descr">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                the mattis, leo quam aliquet congue.
+                            </div>
+
+                            <div class="product__bottom feed-product__bottom">
+                                <div class="product__price feed-product__price">$20</div>
+
+                                <button class="product__favourites feed-product__favourites">
+                                    <span class="lnr lnr-heart product__heart"></span>
+                                    46
+                                </button>
+
+                                <button class="product__sales feed-product__sales">
+                                    <span class="lnr lnr-cart productm__cart"></span>
+                                    634
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 1 -->
+
+                    <!-- 2 -->
+                    <div class="feed-product product">
+                        <div class="feed-product__img-block">
+                            <img class="feed-product__img" src="images/bg-pr-3.jpg" alt="">
+                            <div class="product__img--hover feed-product__img--hover">
+                                <a href="#" class="product__img-btn">More Info</a>
+                                <a href="#" class="product__img-btn">Live Demo</a>
+                            </div>
+                        </div>
+
+                        <div class="product__info feed-product__info">
+                            <a href="#" class="product__title feed-product__title">Marketify Coffee Shop</a>
+
+                            <div class="product__author feed-product__author">
+                                <a href="#" class="product__author-link feed-product__author-link">
+                                    <img class="product__author-avat feed-product__author-avat"
+                                        src="images/account.png">
+                                    <span class="product__author-name feed-product__author-name">TEchoTheme</span>
+                                </a>
+                                <a href="#" class="product-tag">
+                                    <!-- <svg class="product-tag-icon psd-icon" width="16px"
+                                        height="16px">PSD</svg> -->
+
+                                    <svg class="product-tag-icon" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="13px" height="17px">
+                                        <path fill-rule="evenodd" fill="rgb(115, 71, 193)"
+                                            d="M11.182,16.999 L1.818,16.999 C0.816,16.999 -0.000,16.188 -0.000,15.189 L-0.000,1.808 C-0.000,0.811 0.816,-0.001 1.818,-0.001 L8.681,-0.001 L13.000,4.281 L13.000,15.189 C13.000,16.188 12.184,16.999 11.182,16.999 ZM11.859,4.720 L9.525,4.727 C8.829,4.727 8.264,4.164 8.264,3.472 L8.264,1.102 L1.818,1.108 C1.430,1.108 1.114,1.422 1.114,1.808 L1.114,15.189 C1.114,15.577 1.430,15.891 1.818,15.891 L11.182,15.891 C11.570,15.891 11.885,15.577 11.886,15.189 L11.859,4.720 ZM9.020,8.900 C9.836,9.200 10.220,9.622 10.220,10.271 C10.220,11.043 9.623,11.698 8.354,11.698 C7.826,11.698 7.305,11.561 7.044,11.418 L7.257,10.558 C7.538,10.702 7.970,10.845 8.416,10.845 C8.896,10.845 9.150,10.646 9.150,10.346 C9.150,10.059 8.931,9.896 8.375,9.697 C7.607,9.431 7.106,9.008 7.106,8.340 C7.106,7.555 7.765,6.954 8.855,6.954 C9.376,6.954 9.760,7.064 10.035,7.187 L9.802,8.026 C9.616,7.937 9.287,7.808 8.834,7.808 C8.382,7.808 8.162,8.012 8.162,8.251 C8.162,8.544 8.423,8.674 9.020,8.900 ZM4.627,10.005 C4.490,10.005 4.367,9.998 4.271,9.985 L4.271,11.629 L3.235,11.629 L3.235,7.091 C3.558,7.036 4.010,6.995 4.648,6.995 C5.293,6.995 5.752,7.118 6.061,7.363 C6.356,7.596 6.555,7.978 6.555,8.429 C6.555,8.879 6.404,9.261 6.130,9.521 C5.773,9.855 5.245,10.005 4.627,10.005 ZM4.703,7.780 C4.490,7.780 4.346,7.800 4.271,7.821 L4.271,9.179 C4.360,9.200 4.470,9.206 4.621,9.206 C5.176,9.206 5.519,8.927 5.519,8.456 C5.519,8.033 5.224,7.780 4.703,7.780 Z" />
+                                    </svg>
+
+                                    PSD
+                                </a>
+                            </div>
+                            <div class="product__descr feed-product__descr">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                the mattis, leo quam aliquet congue.
+                            </div>
+
+                            <div class="product__bottom feed-product__bottom">
+                                <div class="product__price feed-product__price">$20</div>
+
+                                <button class="product__favourites feed-product__favourites">
+                                    <span class="lnr lnr-heart product__heart"></span>
+                                    46
+                                </button>
+
+                                <button class="product__sales feed-product__sales">
+                                    <span class="lnr lnr-cart productm__cart"></span>
+                                    634
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+
+                    <!-- 3 -->
+                    <div class="feed-product product">
+                        <div class="feed-product__img-block ">
+                            <img class="feed-product__img" src="images/bg-pr-4.jpg" alt="">
+                            <div class="product__img--hover feed-product__img--hover">
+                                <a href="#" class="product__img-btn">More Info</a>
+                                <a href="#" class="product__img-btn">Live Demo</a>
+                            </div>
+                        </div>
+
+                        <div class="product__descr feed-product__info">
+                            <a href="#" class="product__title new-product__title">Bryson - Portfolio Template</a>
+
+                            <div class="product__author feed-product__author">
+                                <a href="#" class="product__author-link feed-product__author-link">
+                                    <img class="product__author-avat feed-product__author-avat"
+                                        src="images/account.png">
+                                    <span class="product__author-name feed-product__author-name">Artcorner</span>
+                                </a>
+                                <a href="#" class="product-tag">
+                                    <!-- <svg class="product-tag-icon html-icon" width="16px" height="16px">HTML</svg> -->
+                                    <svg class="product-tag-icon" version="1.1" id="Layer_1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" width="15px" height="17px" viewBox="0 0 15 17"
+                                        enable-background="new 0 0 15 17" xml:space="preserve">
+                                        <image id="image0" width="15" height="17" x="0" y="0" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAARCAMAAAA11AaTAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+                                    AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABC1BMVEX///9zR8FzR8FzR8Fz
+                                    R8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8Fz
+                                    R8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8Fz
+                                    R8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8Fz
+                                    R8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8Fz
+                                    R8FzR8FzR8FzR8FzR8FzR8FzR8FzR8H///+xSNXvAAAAV3RSTlMA2/Ll0f3+0r/EEiEREA2+wq3J
+                                    Asawmd0J+Z2G7uH3iXMbAR37dl94VjcmKSMlY0zMq+jYLlA6S6PIRT0fgLmMKCwX+qAI67RXGVWz
+                                    C9bZest8ImnDahrA9kY8AAAAAWJLR0QAiAUdSAAAAAd0SU1FB+QJHAMoNsZ//AgAAADCSURBVBjT
+                                    TY/XUsIAEEUvJUEkFBUVEKRZQQGxU0SNhaKioJz//xMSwoycp70z5+7Oyof/H3wKsEpAQQxzGUyD
+                                    kNYIr0esqGVZMcVJaINNaUsLkmxrh12l0p5vktEeWSlH2mHfIK8CRnEhl1Q+4FBHcHxyWq5Uz3QO
+                                    NdWhcdF02pe6gmvdwK3unHyvFrRVdaVO96H36Faf9Gzz4l1Xxl39+gb2e38wHNmQ/ZA+V975cqzI
+                                    +HuZGj8TrziY/trhv5k7zgGlvS7tcjayVAAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMC0wOS0yOFQw
+                                    Mzo0MDo1NCswMzowMNb5bnIAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjAtMDktMjhUMDM6NDA6NTQr
+                                    MDM6MDCnpNbOAAAAAElFTkSuQmCC" />
+                                    </svg>
+                                    HTML
+                                </a>
+                            </div>
+
+                            <div class="product__descr feed-product__descr ">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                the mattis, leo quam aliquet congue.
+                            </div>
+
+                            <div class="product__bottom feed-product__bottom">
+                                <div class="product__price new-product__price">$20</div>
+
+                                <button class="product__favourites feed-product__favourites">
+                                    <span class="lnr lnr-heart product__heart"></span>
+                                    46
+                                </button>
+
+                                <button class="product__sales feed-product__sales">
+                                    <span class="lnr lnr-cart productm__cart"></span>
+                                    634
+                                </button>
+                                <!-- <div class="feed-product__stars">
+                                    <div class="rate-stars"></div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+
+                    <!-- 4 -->
+                    <div class="feed-product product">
+                        <div class="feed-product__img-block ">
+                            <img class="feed-product__img" src="images/bg-pr-2.jpg" alt="">
+                            <div class="product__img--hover feed-product__img--hover ">
+                                <a href="#" class="product__img-btn">More Info</a>
+                                <a href="#" class="product__img-btn">Live Demo</a>
+                            </div>
+                        </div>
+
+                        <div class="feed-product__info">
+                            <a href="#" class="product__title feed-product__title">E-commerce Shopping Cart</a>
+
+                            <div class="product__author feed-product__author">
+                                <a href="#" href="" class="product__author-link feed-product__author-link">
+                                    <img class="product__author-avat feed-product__author-avat"
+                                        src="images/account.png">
+                                    <span class="product__author-name feed-product__author-name">Theme-Valley</span>
+                                </a>
+                                <a href="#" class="product-tag">
+                                    <!-- <svg class="product-tag-icon wordpress-icon" width="16px"
+                                                            height="16px">Wordpress</svg> -->
+                                    <svg class="product-tag-icon" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px">
+                                        <path fill-rule="evenodd" fill="rgb(115, 71, 193)"
+                                            d="M0.166,7.666 C0.166,11.808 3.524,15.166 7.666,15.166 C11.808,15.166 15.166,11.808 15.166,7.666 C15.166,3.524 11.808,0.165 7.666,0.165 C3.524,0.165 0.166,3.524 0.166,7.666 ZM0.744,7.666 C0.744,6.662 0.960,5.710 1.344,4.849 L4.646,13.895 C2.337,12.773 0.744,10.405 0.744,7.666 ZM7.666,14.587 C6.987,14.587 6.331,14.488 5.711,14.306 L7.788,8.272 L9.916,14.101 C9.930,14.135 9.947,14.165 9.965,14.195 C9.246,14.449 8.472,14.587 7.666,14.587 ZM13.261,7.536 C13.655,6.548 13.788,5.759 13.788,5.056 C13.788,4.802 13.770,4.566 13.740,4.344 C14.280,5.331 14.587,6.462 14.587,7.666 C14.587,10.220 13.204,12.449 11.147,13.648 L13.261,7.536 ZM11.768,5.407 C12.031,5.868 12.339,6.461 12.339,7.316 C12.339,7.909 12.163,8.654 11.812,9.554 L11.122,11.860 L8.620,4.421 C9.038,4.397 9.412,4.355 9.412,4.355 C9.785,4.310 9.740,3.763 9.368,3.784 C9.368,3.784 8.247,3.872 7.523,3.872 C6.843,3.872 5.701,3.784 5.701,3.784 C5.327,3.763 5.284,4.333 5.656,4.355 C5.656,4.355 6.010,4.397 6.383,4.421 L7.460,7.376 L5.946,11.918 L3.425,4.421 C3.842,4.397 4.218,4.355 4.218,4.355 C4.591,4.310 4.545,3.763 4.173,3.784 C4.173,3.784 3.053,3.872 2.328,3.872 C2.198,3.872 2.046,3.869 1.883,3.864 C3.121,1.985 5.249,0.744 7.666,0.744 C9.469,0.744 11.109,1.433 12.340,2.562 C12.311,2.559 12.281,2.556 12.251,2.556 C11.570,2.556 11.089,3.148 11.089,3.784 C11.089,4.355 11.418,4.838 11.768,5.407 Z" />
+                                    </svg>
+                                    Plugin
+                                </a>
+                            </div>
+
+                            <div class="product__descr feed-product__descr">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                the mattis, leo quam aliquet congue.
+                            </div>
+
+                            <div class="product__bottom feed-product__bottom">
+                                <div class="product__price feed-product__price">$20</div>
+
+                                <button class="product__favourites feed-product__favourites">
+                                    <span class="lnr lnr-heart product__heart"></span>
+                                    46
+                                </button>
+
+                                <button class="product__sales feed-product__sales">
+                                    <span class="lnr lnr-cart productm__cart"></span>
+                                    634
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 1 -->
+
+                    <!-- 2 -->
+                    <div class="feed-product product">
+                        <div class="feed-product__img-block">
+                            <img class="feed-product__img" src="images/bg-pr-3.jpg" alt="">
+                            <div class="product__img--hover feed-product__img--hover">
+                                <a href="#" class="product__img-btn">More Info</a>
+                                <a href="#" class="product__img-btn">Live Demo</a>
+                            </div>
+                        </div>
+
+                        <div class="product__info feed-product__info">
+                            <a href="#" class="product__title feed-product__title">Marketify Coffee Shop</a>
+
+                            <div class="product__author feed-product__author">
+                                <a href="#" class="product__author-link feed-product__author-link">
+                                    <img class="product__author-avat feed-product__author-avat"
+                                        src="images/account.png">
+                                    <span class="product__author-name feed-product__author-name">TEchoTheme</span>
+                                </a>
+                                <a href="#" class="product-tag">
+                                    <!-- <svg class="product-tag-icon psd-icon" width="16px"
+                                                            height="16px">PSD</svg> -->
+
+                                    <svg class="product-tag-icon" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="13px" height="17px">
+                                        <path fill-rule="evenodd" fill="rgb(115, 71, 193)"
+                                            d="M11.182,16.999 L1.818,16.999 C0.816,16.999 -0.000,16.188 -0.000,15.189 L-0.000,1.808 C-0.000,0.811 0.816,-0.001 1.818,-0.001 L8.681,-0.001 L13.000,4.281 L13.000,15.189 C13.000,16.188 12.184,16.999 11.182,16.999 ZM11.859,4.720 L9.525,4.727 C8.829,4.727 8.264,4.164 8.264,3.472 L8.264,1.102 L1.818,1.108 C1.430,1.108 1.114,1.422 1.114,1.808 L1.114,15.189 C1.114,15.577 1.430,15.891 1.818,15.891 L11.182,15.891 C11.570,15.891 11.885,15.577 11.886,15.189 L11.859,4.720 ZM9.020,8.900 C9.836,9.200 10.220,9.622 10.220,10.271 C10.220,11.043 9.623,11.698 8.354,11.698 C7.826,11.698 7.305,11.561 7.044,11.418 L7.257,10.558 C7.538,10.702 7.970,10.845 8.416,10.845 C8.896,10.845 9.150,10.646 9.150,10.346 C9.150,10.059 8.931,9.896 8.375,9.697 C7.607,9.431 7.106,9.008 7.106,8.340 C7.106,7.555 7.765,6.954 8.855,6.954 C9.376,6.954 9.760,7.064 10.035,7.187 L9.802,8.026 C9.616,7.937 9.287,7.808 8.834,7.808 C8.382,7.808 8.162,8.012 8.162,8.251 C8.162,8.544 8.423,8.674 9.020,8.900 ZM4.627,10.005 C4.490,10.005 4.367,9.998 4.271,9.985 L4.271,11.629 L3.235,11.629 L3.235,7.091 C3.558,7.036 4.010,6.995 4.648,6.995 C5.293,6.995 5.752,7.118 6.061,7.363 C6.356,7.596 6.555,7.978 6.555,8.429 C6.555,8.879 6.404,9.261 6.130,9.521 C5.773,9.855 5.245,10.005 4.627,10.005 ZM4.703,7.780 C4.490,7.780 4.346,7.800 4.271,7.821 L4.271,9.179 C4.360,9.200 4.470,9.206 4.621,9.206 C5.176,9.206 5.519,8.927 5.519,8.456 C5.519,8.033 5.224,7.780 4.703,7.780 Z" />
+                                    </svg>
+
+                                    PSD
+                                </a>
+                            </div>
+                            <div class="product__descr feed-product__descr">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                the mattis, leo quam aliquet congue.
+                            </div>
+
+                            <div class="product__bottom feed-product__bottom">
+                                <div class="product__price feed-product__price">$20</div>
+
+                                <button class="product__favourites feed-product__favourites">
+                                    <span class="lnr lnr-heart product__heart"></span>
+                                    46
+                                </button>
+
+                                <button class="product__sales feed-product__sales">
+                                    <span class="lnr lnr-cart productm__cart"></span>
+                                    634
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+
+                    <!-- 3 -->
+                    <div class="feed-product product">
+                        <div class="feed-product__img-block ">
+                            <img class="feed-product__img" src="images/bg-pr-4.jpg" alt="">
+                            <div class="product__img--hover feed-product__img--hover">
+                                <a href="#" class="product__img-btn">More Info</a>
+                                <a href="#" class="product__img-btn">Live Demo</a>
+                            </div>
+                        </div>
+
+                        <div class="product__descr feed-product__info">
+                            <a href="#" class="product__title new-product__title">Bryson - Portfolio Template</a>
+
+                            <div class="product__author feed-product__author">
+                                <a href="#" class="product__author-link feed-product__author-link">
+                                    <img class="product__author-avat feed-product__author-avat"
+                                        src="images/account.png">
+                                    <span class="product__author-name feed-product__author-name">Artcorner</span>
+                                </a>
+                                <a href="#" class="product-tag">
+                                    <!-- <svg class="product-tag-icon html-icon" width="16px" height="16px">HTML</svg> -->
+                                    <svg class="product-tag-icon" version="1.1" id="Layer_1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" width="15px" height="17px" viewBox="0 0 15 17"
+                                        enable-background="new 0 0 15 17" xml:space="preserve">
+                                        <image id="image0" width="15" height="17" x="0" y="0" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAARCAMAAAA11AaTAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+                                                        AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABC1BMVEX///9zR8FzR8FzR8Fz
+                                                        R8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8Fz
+                                                        R8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8Fz
+                                                        R8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8Fz
+                                                        R8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8FzR8Fz
+                                                        R8FzR8FzR8FzR8FzR8FzR8FzR8FzR8H///+xSNXvAAAAV3RSTlMA2/Ll0f3+0r/EEiEREA2+wq3J
+                                                        Asawmd0J+Z2G7uH3iXMbAR37dl94VjcmKSMlY0zMq+jYLlA6S6PIRT0fgLmMKCwX+qAI67RXGVWz
+                                                        C9bZest8ImnDahrA9kY8AAAAAWJLR0QAiAUdSAAAAAd0SU1FB+QJHAMoNsZ//AgAAADCSURBVBjT
+                                                        TY/XUsIAEEUvJUEkFBUVEKRZQQGxU0SNhaKioJz//xMSwoycp70z5+7Oyof/H3wKsEpAQQxzGUyD
+                                                        kNYIr0esqGVZMcVJaINNaUsLkmxrh12l0p5vktEeWSlH2mHfIK8CRnEhl1Q+4FBHcHxyWq5Uz3QO
+                                                        NdWhcdF02pe6gmvdwK3unHyvFrRVdaVO96H36Faf9Gzz4l1Xxl39+gb2e38wHNmQ/ZA+V975cqzI
+                                                        +HuZGj8TrziY/trhv5k7zgGlvS7tcjayVAAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMC0wOS0yOFQw
+                                                        Mzo0MDo1NCswMzowMNb5bnIAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjAtMDktMjhUMDM6NDA6NTQr
+                                                        MDM6MDCnpNbOAAAAAElFTkSuQmCC" />
+                                    </svg>
+                                    HTML
+                                </a>
+                            </div>
+
+                            <div class="product__descr feed-product__descr ">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                the mattis, leo quam aliquet congue.
+                            </div>
+
+                            <div class="product__bottom feed-product__bottom">
+                                <div class="product__price new-product__price">$20</div>
+
+                                <button class="product__favourites feed-product__favourites">
+                                    <span class="lnr lnr-heart product__heart"></span>
+                                    46
+                                </button>
+
+                                <button class="product__sales feed-product__sales">
+                                    <span class="lnr lnr-cart productm__cart"></span>
+                                    634
+                                </button>
+                                <!-- <div class="feed-product__stars">
+                                                        <div class="rate-stars"></div>
+                                                    </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                </div>
+
+
+            </div>
+        </section>
+
+
+
+        <!-- <section class="facts">
+            <div class="container">
+                <div class="facts__inner">
+
+                -->
+                    <!-- <div class="facts__item">
+                        <span class="lnr lnr-briefcase facts__icon"></span>
+                        <span class="facts__number facts__number--red">25,736</span>
+                        members
+                    </div>
+                    <div class="facts__item">
+                        <span class="lnr lnr-upload facts__icon"></span>
+                        <span class="facts__number facts__number--red">25,736</span>
+                        members
+                    </div>
+                    <div class="facts__item">
+                        <span class="lnr lnr-smile facts__icon"></span>
+                        <span class="facts__number facts__number--red">25,736</span>
+                        members
+                    </div>
+                    <div class="facts__item">
+                        <span class="lnr lnr-users facts__icon"></span>
+                        <span class="facts__number facts__number--red">25,736</span>
+                        members
+                    </div>
+38,436
+items for sale
+3,736
+total sales
+2,736
+happy customers -->
+                </div>
+            </div>
+        </section>
 
 
 
@@ -517,6 +1359,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
 </body>
