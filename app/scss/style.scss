@@ -33,6 +33,38 @@
   background-color: #5578f852;
 }
 
+@mixin content-block {
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+}
+
+@mixin content-product-block {
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+  &:hover {
+    box-shadow: 1px 2px 40px 0px rgba(3, 1, 48, 0.12);
+  }
+}
+
+// .benefits__title, .testimonials__title, .news__title
+@mixin info-section-head {
+  &__title {
+    font-size: 36px;
+    margin-bottom: 32px;
+    text-align: center;
+    &--blue {
+      color: $color-1;
+    }
+  }
+  &__text {
+    max-width: 680px;
+    margin-bottom: 60px;
+    line-height: 1.8;
+  }
+}
+
 .top-header {
   padding: 27px 0 25px 0;
   background-color: #eef1f3;
@@ -407,39 +439,35 @@
   &__inner {
     display: flex;
   }
+}
+.feature {
+  transition: all 0.4s;
+  max-width: 360px;
+  padding: 40px 35px 45px;
+  text-align: center;
 
-  .feature {
-    transition: all 0.4s;
-    max-width: 360px;
-    padding: 40px 35px 45px;
-    text-align: center;
-
-    &__img {
-      margin-bottom: 35px;
-    }
-
-    &__title {
-      margin-bottom: 35px;
-      font-size: 24px;
-      font-family: "Quicksand";
-      color: rgb(0, 0, 0);
-      line-height: 0.3;
-    }
-
-    &__descr {
-      color: rgb(85, 85, 85);
-      line-height: 1.875;
-    }
+  &__img {
+    margin-bottom: 35px;
   }
-  .feature + .feature {
-    margin-left: 30px;
+
+  &__title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #000;
   }
-  .feature:hover {
-    border-radius: 4px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.158);
-    transform: scale(1.04);
+
+  &__descr {
+    color: rgb(85, 85, 85);
+    line-height: 1.875;
   }
+}
+.feature + .feature {
+  margin-left: 30px;
+}
+.feature:hover {
+  box-shadow: 0px 2px 53px 0px rgba(59, 10, 10, 0.156);
+  transform: scale(1.04);
+  @include content-block();
 }
 // .psd-icon {
 //   background-image: url(../images/icons/plugin.svg);
@@ -483,7 +511,7 @@
   cursor: pointer;
   padding: 7px 20px;
   line-height: 1.2;
-   &:hover {
+  &:hover {
     color: #fff;
     font-weight: 500;
     background-color: $color-1;
@@ -499,8 +527,6 @@
   &:active {
     box-shadow: 0 0 2px 3px $color-2;
   }
-
-
 }
 
 .product {
@@ -565,7 +591,7 @@
 
   &__author-name {
     font-weight: 500;
-    margin-left: 5px;
+    font-size: 15px;
     display: inline-block;
     line-height: 1.2;
   }
@@ -575,6 +601,8 @@
     height: 30px;
     border-radius: 50%;
     display: block;
+    background-size: contain;
+    margin-right: 10px;
   }
 
   &__price {
@@ -658,7 +686,7 @@
     top: -105px;
     background-color: $color-3;
     position: absolute;
-   transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s;
     &:hover {
       box-shadow: 0 0 3px 2px rgba(84, 25, 187, 0.911);
     }
@@ -686,9 +714,7 @@
 }
 
 .featured-item {
-  border-radius: 4px;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0px 2px 30px 0px rgba(147, 155, 168, 0.1);
+  @include content-product-block();
   position: relative;
   min-height: 450px;
 
@@ -726,8 +752,6 @@
     margin-bottom: 10px;
   }
 
- 
-
   &__tag-btn {
     margin-bottom: 40px;
   }
@@ -763,16 +787,16 @@
 .new-release {
   background-color: #f2f4f8;
   padding: 120px 0 70px;
-  
-&__catalogue {
+
+  &__catalogue {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 30px;
     margin-bottom: 60px;
   }
- 
- &__tags {
+
+  &__tags {
     border-radius: 4px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 1px 2px 0px rgba(90, 93, 100, 0.1);
@@ -795,7 +819,7 @@
     border-radius: 50px;
     outline: transparent;
     @include button-style;
- &:hover {
+    &:hover {
       @include button-state-hover;
     }
 
@@ -807,17 +831,13 @@
       @include button-state-active;
     }
   }
-
-
-
 }
 
-   
 .new-product,
 .feed-product {
   max-width: 361px;
-  background-color: #ffffff;
-
+  @include content-product-block();
+  transition: box-shadow 0.4s;
   &__img-block {
     max-width: 361px;
     position: relative;
@@ -875,17 +895,11 @@
   }
 }
 
-
-
-
-
-
-
 // 11
 
 .follower-feed {
-  padding: 120px 0 100px;
-  background-color: #eff1f5;
+  padding: 80px 0 100px;
+  background-color: #ecedf0;
 
   &__title {
     position: relative;
@@ -906,7 +920,7 @@
       box-shadow: 0 0 3px 1px $color-2;
     }
     &:active {
-       box-shadow: 0 0 2px 2px $color-2;
+      box-shadow: 0 0 2px 2px $color-2;
     }
   }
 
@@ -915,7 +929,6 @@
   }
 
   .prev-arrow {
-    
     left: auto;
     right: 94px;
     border-radius: 30px 0 0 30px;
@@ -927,54 +940,313 @@
   }
 }
 
-
 .facts {
- background-color: #212225;
-padding: 90px 0;
+  background-color: #212225;
+  padding: 90px 0;
 
-&__inner {
-  display: flex;
-  justify-content: space-between;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  &__item {
+    color: #fff;
+  }
+  &__number {
+    display: block;
+    font-size: 36px;
+    margin-bottom: 18px;
+  }
+
+  &__icon {
+    display: block;
+    font-size: 48px;
+    line-height: 2;
+  }
+  &__icon,
+  &__number {
+    &--red {
+      color: #ff6a6d;
+    }
+    &--blue {
+      color: #58c9e9;
+    }
+    &--green {
+      color: #77de51;
+    }
+    &--yellow {
+      color: #feb71d;
+    }
+  }
+}
+
+.benefits {
+  padding: 120px;
   text-align: center;
-}
-&__item {
-  color: #fff;
-}
-&__number {
-font-size: 36px;
-// display: block;
+  @include info-section-head();
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-&--red{
-color: #ff6a6d;
-}
-&--blue {
- color: #58c9e9;
-}
-&--green {
-  color:#77de51 ;
-}
-&--yellow {
-color: #feb71d;
-}
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
 }
 
-&__icon {
-  display: block;
-  font-size: 48px;
+.benefit-item {
+  @extend .feature;
+  @include content-block();
+  padding: 0 32px 62px;
+
+  &:hover {
+    @extend .feature:hover;
+    box-shadow: 0px 2px 55px 0px rgba(59, 10, 10, 0.2);
+  }
+
+  &__number {
+    font-size: 48px;
+    line-height: 1.6;
+    color: rgba(92, 135, 248, 0.2);
+    text-align: left;
+  }
+
+  &__heading {
+    @extend .feature__title;
+  }
+
+  &__descr {
+    @extend .feature__descr;
+  }
+
+  &__icon {
+    display: block;
+    font-size: 60px;
+    margin-bottom: 39px;
+  }
+
+  & + & {
+    margin-left: 0;
+  }
+  .lnr-license {
+    color: $color-1;
+  }
+  .lnr-magic-wand {
+    color: $color-3;
+  }
+  .lnr-lock {
+    color: #77de51;
+  }
+  .lnr-chart-bars {
+    color: #feb71d;
+  }
+  .lnr-leaf {
+    color: #58c9e9;
+  }
+  .lnr-phone {
+    color: #ff6a6d;
+  }
 }
 
+.cell-and-buy {
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
+.cell-box,
+.buy-box {
+  padding: 100px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  width: 100%;
+  min-height: 560px;
+  color: #ffffff;
+  &__icon {
+    margin-bottom: 40px;
+  }
 
+  &__title {
+    font-size: 36px;
+    margin-bottom: 32px;
+  }
 
-.briefcase {
-  
-  font-family: "Linearicons";
-  color: rgb(254, 183, 29);
-  line-height: 0.75;
+  &__info {
+    line-height: 30px;
+    margin-bottom: 40px;
+    max-width: 580px;
+  }
+
+  &__btn {
+    min-width: 200px;
+    padding: 21px 30px;
+    background-color: #fff;
+    border-radius: 45px;
+    font-weight: 600;
+    transition: 0.2s all;
+  }
+
+  &__btn:hover {
+    background-color: transparent;
+    color: #ffffff;
+    box-shadow: 0 0 1px 2px #ffffff;
+  }
+
+  &__btn:focus {
+    color: #ffffff;
+    box-shadow: 0 0 1px 2px #ffffff;
+  }
+
+  &__btn:active {
+    box-shadow: 0 0 5px 4px #fff;
+    transition: 0.1s box-shadow;
+  }
+}
+
+.cell-box {
+  background-image: url(../images/cell-box_bg.jpg);
+  &__icon {
+    width: 120px;
+    height: 110px;
+  }
+  &__btn {
+    display: block;
+    color: $color-1;
+  }
+  &__btn:focus {
+    background-color: #0c2de7;
+  }
+}
+
+.buy-box {
+  background-image: url(../images/buy-box_bg.jpg);
+  &__icon {
+    width: 106px;
+    height: 110px;
+  }
+  &__btn {
+    color: $color-3;
+  }
+  &__btn:focus {
+    background-color: rgba(89, 13, 219, 0.842);
+  }
+}
+
+.testimonials {
+  padding: 120px 120px 200px;
+  text-align: center;
+  @include info-section-head();
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__slider {
+    height: 340px;
+    max-width: 1200px;
+  }
+
+  &__all-btn {
+    position: relative;
+    top: 100px;
+    cursor: pointer;
+    display: block;
+    padding: 20px;
+    max-width: 190px;
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+    line-height: 1.3;
+    border-radius: 50px;
+    outline: transparent;
+    @include button-style;
+    &:hover {
+      @include button-state-hover;
+    }
+
+    &:focus {
+      @include button-state-focus;
+    }
+
+    &:active {
+      @include button-state-active;
+    }
+  }
+}
+.testimonial-item {
+  outline: none;
+  @include content-block();
+  margin: 50px 30px;
+  display: inline-block;
   text-align: left;
-  position: absolute;
-  left: 416px;
-  top: 5221.5px;
-  z-index: 279;
+  border-radius: 1px;
+  padding: 50px 37px;
+  max-width: 553px;
+  transition: all 0.4s;
+  border-left: 3px solid $color-1;
+  position: relative;
+
+  &__client-link {
+    display: flex;
+    outline: none;
+    max-width: 305px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+  }
+
+  &__client-avat {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-size: contain;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+  }
+
+  &__client-name {
+    text-align-last: left;
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    line-height: 1.8;
+    margin-left: 10px;
+  }
+
+  &__client-position {
+    display: block;
+    font-size: 16px;
+    margin-left: 3px;
+    color: rgb(85, 85, 85);
+  }
+
+  &__text {
+    line-height: 30px;
+    color: #555555;
+    margin-bottom: 0;
+  }
+
+  .lnr-bubble:before {
+    content: "\e83f";
+    font-size: 62px;
+    color: #e8e8e8;
+    position: absolute;
+    top: 42px;
+    right: 48px;
+  }
+}
+.testimonial-item:hover {
+  box-shadow: 0px 2px 50px 0px rgba(14, 3, 32, 0.281);
 }
