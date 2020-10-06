@@ -1,3 +1,6 @@
+
+
+
 $(document).ready(function () {
     $('.featured-products__slider').slick({
         slidesToShow: 1,

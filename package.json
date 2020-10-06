@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
     "browser-sync": "^2.26.12",
     "cssmin": "^0.4.3",
     "gulp": "^4.0.2",
@@ -24,8 +25,12 @@
     "slick-carousel": "^1.8.1"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free-regular": "^5.0.13",
+    "@fortawesome/fontawesome-free-webfonts": "^1.0.9",
     "@material/mwc-button": "^0.18.0",
     "@webcomponents/webcomponentsjs": "^2.4.4",
+    "font-awesome": "^4.7.0",
+    "font-awesome-scss": "^1.0.0",
     "gulp-sass": "^4.1.0",
     "jquery": "^3.5.1"
   }

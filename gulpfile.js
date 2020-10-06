@@ -24,12 +24,31 @@ gulp.task('style', function(){
       'node_modules/normalize.css/normalize.css',
       'node_modules/slick-carousel/slick/slick.css',
       'node_modules/magnific-popup/dist/magnific-popup.css',
-      'node_modules/rateyo/src/jquery.rateyo.css'
+      'node_modules/rateyo/src/jquery.rateyo.css',
+   
+
     ])
     .pipe(concat("libs.min.css"))
     .pipe(cssmin())
     .pipe(gulp.dest("app/css"));
 })
+
+
+
+
+
+
+gulp.task('icons', function () {
+  return gulp.src('node_modules/@fortawesome/fontawesome-free/webfonts/*')
+    .pipe(gulp.dest(dist + '/assets/webfonts/'));
+});
+
+
+
+
+
+
+
 
 gulp.task('script', function(){
   return gulp.src([
@@ -44,10 +63,13 @@ gulp.task('script', function(){
   .pipe(gulp.dest('app/js'))
 })
 
+
 gulp.task('html', function(){
   return gulp.src('app/*.html')
   .pipe(browserSync.reload({stream: true}))
 });
+
+
 
 gulp.task("js", function () {
   return gulp.src('app/js/*.js').pipe(browserSync.reload({ stream: true }));

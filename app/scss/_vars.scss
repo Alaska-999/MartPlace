@@ -1,4 +1,97 @@
 $text-color-1: #333333;
 $color-1: #056cda;
 $color-2: #1836a1;
-$color-3:rgb(108, 59, 192);
+$color-3: rgb(108, 59, 192);
+
+@mixin button-style {
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    outline: transparent;
+    font-family: "Quicksand";
+    background-color: $color-1;
+    border: 1px solid $color-1;
+    transition: background-color 0.3s;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+@mixin button-state-hover {
+    background-color: transparent;
+    color: $color-1;
+    font-weight: 600;
+    box-shadow: 0 0 0 1px $color-1;
+}
+
+@mixin button-state-focus {
+    background-color: transparent;
+    color: $color-2;
+    font-weight: 600;
+    border-color: $color-2;
+    box-shadow: 0 0 0 1px $color-2;
+}
+
+@mixin button-state-active {
+    background-color: #5578f852;
+}
+
+@mixin content-block {
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+}
+
+@mixin content-product-block {
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    &:hover {
+        box-shadow: 1px 2px 40px 0px rgba(3, 1, 48, 0.12);
+    }
+}
+
+// .benefits__title, .testimonials__title, .news__title
+@mixin info-section-head {
+    &__title {
+        font-size: 36px;
+        margin-bottom: 32px;
+        text-align: center;
+        &--blue {
+            color: $color-1;
+        }
+    }
+    &__text {
+        max-width: 680px;
+        margin-bottom: 60px;
+        line-height: 1.8;
+    }
+}
+
+@mixin white-btn {
+    padding: 20px 30px;
+    min-width: 200px;
+    font-size: 15px;
+    background-color: #fff;
+    border-radius: 65px;
+    font-weight: 600;
+    transition: 0.2s all;
+    color: $color-1;
+}
+@mixin white-btn-hover {
+    background-color: transparent;
+    color: #ffffff;
+    box-shadow: 0 0 1px 2px #ffffff;
+}
+
+@mixin white-btn-focus {
+    color: #ffffff;
+    box-shadow: 0 0 1px 2px #ffffff;
+    background-color: #0c2de7;
+    }
+
+@mixin white-btn-active {
+    box-shadow: 0 0 5px 4px #fff;
+    transition: 0.1s box-shadow;
+      background-color: #0c2de7;
+}
+
+
